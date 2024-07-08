@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "akshara soman"
+  site-url: https://www.aksharasoman.github.io
+  description: "A machine learning blog"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: SOLAR  #GOOD ONES: MINTY, SOLAR, flatly
+    css: styles.css
+
+
+
