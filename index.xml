@@ -10,9 +10,9 @@
 <atom:link href="https://www.aksharasoman.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
 <generator>quarto-1.5.53</generator>
-<lastBuildDate>Wed, 10 Jul 2024 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 11 Jul 2024 18:30:00 GMT</lastBuildDate>
 <item>
-  <title>Generate handwritten digits using A GAN model</title>
+  <title>Generate Handwritten Digits Using GAN</title>
   <dc:creator>Akshara Soman</dc:creator>
   <link>https://www.aksharasoman.github.io/posts/welcome/</link>
   <description><![CDATA[ 
@@ -30,7 +30,7 @@
 <ol type="1">
 <li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
 <li>Model: Generative Adversarial Network (GAN)</li>
-<li>Implementing with Pytorch on Google Colab</li>
+<li>Code available at:</li>
 </ol>
 </section>
 <section id="expected-learnings" class="level3">
@@ -61,7 +61,6 @@
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <ol type="1">
 <li>Coursera Guided Project: “<a href="https://www.coursera.org/projects/deep-learning-with-pytorch-generative-adversarial-network#details">Deep Learning with PyTorch : Generative Adversarial Network</a>”</li>
-<li></li>
 </ol>
 
 
@@ -73,7 +72,7 @@
   <category>GAN</category>
   <category>pytorch</category>
   <guid>https://www.aksharasoman.github.io/posts/welcome/</guid>
-  <pubDate>Wed, 10 Jul 2024 18:30:00 GMT</pubDate>
+  <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Post With Code</title>
