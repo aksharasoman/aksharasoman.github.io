@@ -14,7 +14,7 @@
 <item>
   <title>Generate Handwritten Digits Using GAN</title>
   <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/welcome/</link>
+  <link>https://www.aksharasoman.github.io/posts/gan_project/</link>
   <description><![CDATA[ 
 
 
@@ -30,7 +30,8 @@
 <ol type="1">
 <li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
 <li>Model: Generative Adversarial Network (GAN)</li>
-<li>Code available at:</li>
+<li>Code available at: <a href="https://github.com/aksharasoman/dcgan" class="uri">https://github.com/aksharasoman/dcgan</a></li>
+<li>It can be built in google colab: <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">python-notebook</a></li>
 </ol>
 </section>
 <section id="expected-learnings" class="level3">
@@ -71,8 +72,78 @@
   <category>gen-ai</category>
   <category>GAN</category>
   <category>pytorch</category>
+  <guid>https://www.aksharasoman.github.io/posts/gan_project/</guid>
+  <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Generate Handwritten Digits Using GAN</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="objective-of-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project:</h3>
+<p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
+</section>
+<section id="important-details" class="level3">
+<h3 class="anchored" data-anchor-id="important-details">Important Details:</h3>
+<ol type="1">
+<li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
+<li>Model: Generative Adversarial Network (GAN)</li>
+<li>Code available at: <a href="https://github.com/aksharasoman/dcgan" class="uri">https://github.com/aksharasoman/dcgan</a></li>
+<li>It can be built in google colab: <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">python-notebook</a></li>
+</ol>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator.</p>
+</section>
+<section id="expected-learnings" class="level3">
+<h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings:</h3>
+<ol type="1">
+<li>What is Generative Adversarial Network</li>
+<li>Applications</li>
+<li>What is Generator?</li>
+<li>What is discriminator?</li>
+<li>Understanding architecture</li>
+<li>Loss functions</li>
+<li>How to generate a fake image using GAN?</li>
+<li>How to download and transform data in Pytorch?</li>
+<li>How to calculate input image size for each layer?</li>
+<li>How to build a GAN model from scratch in pytorch?</li>
+<li>How to train the model on colab with GPU?
+<ol type="1">
+<li>How to train the model in a remote cluster environment?</li>
+</ol></li>
+<li>Challenges in GAN</li>
+</ol>
+</section>
+<section id="implementation" class="level3">
+<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
+<p>This project can be divided into 7 tasks. 1. Configurations 2. Load Dataset 3. Load dataset into batches 4. Create discriminator network 5. Create generator network 6. Create loss function &amp; optimizer 7. Training Loop</p>
+<p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ol type="1">
+<li>Coursera Guided Project: “<a href="https://www.coursera.org/projects/deep-learning-with-pytorch-generative-adversarial-network#details">Deep Learning with PyTorch : Generative Adversarial Network</a>”</li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>project</category>
+  <category>gen-ai</category>
+  <category>GAN</category>
+  <category>pytorch</category>
   <guid>https://www.aksharasoman.github.io/posts/welcome/</guid>
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/welcome/gan_arch.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Post With Code</title>

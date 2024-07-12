@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/gan_project/index.html",
       "/posts/welcome/index.html",
       "/posts/post-with-code/index.html",
       "/posts/matplotlib-demo/hello.html"
