@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2024-06-07">
+<meta name="author" content="Akshara Soman">
+<meta name="dcterms.date" content="2024-07-11">
 
-<title>Welcome To My Blog – akshara soman</title>
+<title>Generate handwritten digits using A GAN model – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -119,9 +119,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Generate handwritten digits using A GAN model</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">project</div>
+                <div class="quarto-category">gen-ai</div>
+                <div class="quarto-category">GAN</div>
+                <div class="quarto-category">pytorch</div>
               </div>
                   </div>
   </div>
@@ -132,21 +135,21 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Akshara Soman </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 7, 2024</p>
+        <p class="date">July 11, 2024</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">July 9, 2024</p>
+        <p class="date-modified">July 12, 2024</p>
       </div>
     </div>
       
@@ -164,11 +167,51 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<section id="objective-of-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project:</h3>
+<p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
+</section>
+<section id="important-details" class="level3">
+<h3 class="anchored" data-anchor-id="important-details">Important Details:</h3>
+<ol type="1">
+<li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
+<li>Model: Generative Adversarial Network (GAN)</li>
+<li>Implementing with Pytorch on Google Colab</li>
+</ol>
+</section>
+<section id="expected-learnings" class="level3">
+<h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings:</h3>
+<ol type="1">
+<li>What is Generative Adversarial Network?</li>
+<li>Applications</li>
+<li>What is Generator?</li>
+<li>What is discriminator?</li>
+<li>Understanding architecture</li>
+<li>Loss functions</li>
+<li>How to generate a fake image using GAN?</li>
+<li>How to download and transform data in Pytorch?</li>
+<li>How to calculate input image size for each layer?</li>
+<li>How to build a GAN model from scratch in pytorch?</li>
+<li>How to train the model on colab with GPU?
+<ol type="1">
+<li>How to train the model in a remote cluster environment?</li>
+</ol></li>
+<li>Challenges in GAN</li>
+</ol>
+</section>
+<section id="implementation" class="level3">
+<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
+<p>This project can be divided into 7 tasks. 1. Configurations 2. Load Dataset 3. Load dataset into batches 4. Create discriminator network 5. Create generator network 6. Create loss function &amp; optimizer 7. Training Loop</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ol type="1">
+<li>Coursera Guided Project: “<a href="https://www.coursera.org/projects/deep-learning-with-pytorch-generative-adversarial-network#details">Deep Learning with PyTorch : Generative Adversarial Network</a>”</li>
+<li></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

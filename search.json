@@ -9,9 +9,9 @@
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "title": "Generate handwritten digits using A GAN model",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Objective of the Project:\nBuild a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.\n\n\nImportant Details:\n\nDataset: MNIST handwritten digits dataset (grayscale)\nModel: Generative Adversarial Network (GAN)\nImplementing with Pytorch on Google Colab\n\n\n\nExpected learnings:\n\nWhat is Generative Adversarial Network?\nApplications\nWhat is Generator?\nWhat is discriminator?\nUnderstanding architecture\nLoss functions\nHow to generate a fake image using GAN?\nHow to download and transform data in Pytorch?\nHow to calculate input image size for each layer?\nHow to build a GAN model from scratch in pytorch?\nHow to train the model on colab with GPU?\n\nHow to train the model in a remote cluster environment?\n\nChallenges in GAN\n\n\n\nImplementation\nThis project can be divided into 7 tasks. 1. Configurations 2. Load Dataset 3. Load dataset into batches 4. Create discriminator network 5. Create generator network 6. Create loss function & optimizer 7. Training Loop\n\n\nReferences\n\nCoursera Guided Project: “Deep Learning with PyTorch : Generative Adversarial Network”"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -32,6 +32,6 @@
     "href": "index.html",
     "title": "akshara soman",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Basics\n\n\n\nmatplotlib\n\n\ncode\n\n\nvisualization\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nJun 7, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Generate handwritten digits using A GAN model\n\n\n\nproject\n\n\ngen-ai\n\n\nGAN\n\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 11, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Basics\n\n\n\nmatplotlib\n\n\ncode\n\n\nvisualization\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

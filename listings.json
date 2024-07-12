@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/welcome/index.html",
       "/posts/post-with-code/index.html",
-      "/posts/matplotlib-demo/hello.html",
-      "/posts/welcome/index.html"
+      "/posts/matplotlib-demo/hello.html"
     ]
   }
 ]
