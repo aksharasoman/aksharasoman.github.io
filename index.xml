@@ -34,73 +34,9 @@
 <li>It can be built in google colab: <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">python-notebook</a></li>
 </ol>
 </section>
-<section id="expected-learnings" class="level3">
-<h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings:</h3>
-<ol type="1">
-<li>What is Generative Adversarial Network?</li>
-<li>Applications</li>
-<li>What is Generator?</li>
-<li>What is discriminator?</li>
-<li>Understanding architecture</li>
-<li>Loss functions</li>
-<li>How to generate a fake image using GAN?</li>
-<li>How to download and transform data in Pytorch?</li>
-<li>How to calculate input image size for each layer?</li>
-<li>How to build a GAN model from scratch in pytorch?</li>
-<li>How to train the model on colab with GPU?
-<ol type="1">
-<li>How to train the model in a remote cluster environment?</li>
-</ol></li>
-<li>Challenges in GAN</li>
-</ol>
-</section>
-<section id="implementation" class="level3">
-<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
-<p>This project can be divided into 7 tasks. 1. Configurations 2. Load Dataset 3. Load dataset into batches 4. Create discriminator network 5. Create generator network 6. Create loss function &amp; optimizer 7. Training Loop</p>
-</section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
-<ol type="1">
-<li>Coursera Guided Project: “<a href="https://www.coursera.org/projects/deep-learning-with-pytorch-generative-adversarial-network#details">Deep Learning with PyTorch : Generative Adversarial Network</a>”</li>
-</ol>
-
-
-</section>
-
- ]]></description>
-  <category>project</category>
-  <category>gen-ai</category>
-  <category>GAN</category>
-  <category>pytorch</category>
-  <guid>https://www.aksharasoman.github.io/posts/gan_project/</guid>
-  <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Generate Handwritten Digits Using GAN</title>
-  <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="objective-of-the-project" class="level3">
-<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project:</h3>
-<p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
-</section>
-<section id="important-details" class="level3">
-<h3 class="anchored" data-anchor-id="important-details">Important Details:</h3>
-<ol type="1">
-<li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
-<li>Model: Generative Adversarial Network (GAN)</li>
-<li>Code available at: <a href="https://github.com/aksharasoman/dcgan" class="uri">https://github.com/aksharasoman/dcgan</a></li>
-<li>It can be built in google colab: <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">python-notebook</a></li>
-</ol>
-</section>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. <span class="citation" data-cites="gan-arch">@gan-arch</span> gives outline of a GAN model. <img src="https://www.aksharasoman.github.io/posts/welcome/gan-arch.png" id="gan-arch" class="img-fluid" alt="Basic GAN architecture"> A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine. ### Expected learnings: 1. What is Generative Adversarial Network 2. Applications 3. What is Generator? 4. What is discriminator? 5. Understanding architecture 6. Loss functions 7. How to generate a fake image using GAN? 8. How to download and transform data in Pytorch? 9. How to calculate input image size for each layer? 10. How to build a GAN model from scratch in pytorch? 11. How to train the model on colab with GPU?<br>
+<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. <span class="citation" data-cites="gan-arch">@gan-arch</span> gives outline of a GAN model. <img src="https://www.aksharasoman.github.io/posts/gan_project/gan-arch.png" id="gan-arch" class="img-fluid" alt="Basic GAN architecture"> A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine. ### Expected learnings: 1. What is Generative Adversarial Network 2. Applications 3. What is Generator? 4. What is discriminator? 5. Understanding architecture 6. Loss functions 7. How to generate a fake image using GAN? 8. How to download and transform data in Pytorch? 9. How to calculate input image size for each layer? 10. How to build a GAN model from scratch in pytorch? 11. How to train the model on colab with GPU?<br>
 1. How to train the model in a remote cluster environment? 12. Challenges in GAN</p>
 </section>
 <section id="implementation" class="level3">
@@ -131,9 +67,9 @@
   <category>gen-ai</category>
   <category>GAN</category>
   <category>pytorch</category>
-  <guid>https://www.aksharasoman.github.io/posts/welcome/</guid>
+  <guid>https://www.aksharasoman.github.io/posts/gan_project/</guid>
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/welcome/gan_arch.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Post With Code</title>
