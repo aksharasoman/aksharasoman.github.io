@@ -11,27 +11,13 @@
     "href": "posts/gan_project/index.html",
     "title": "Generate Handwritten Digits Using GAN",
     "section": "",
-    "text": "Objective of the Project:\nBuild a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.\n\n\nImportant Details:\n\nDataset: MNIST handwritten digits dataset (grayscale)\nModel: Generative Adversarial Network (GAN)\nCode available at: https://github.com/aksharasoman/dcgan\nIt can be built in google colab: python-notebook\n\n\n\nOverview\nA Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. @gan-arch gives outline of a GAN model.  A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine. ### Expected learnings: 1. What is Generative Adversarial Network 2. Applications 3. What is Generator? 4. What is discriminator? 5. Understanding architecture 6. Loss functions 7. How to generate a fake image using GAN? 8. How to download and transform data in Pytorch? 9. How to calculate input image size for each layer? 10. How to build a GAN model from scratch in pytorch? 11. How to train the model on colab with GPU?\n1. How to train the model in a remote cluster environment? 12. Challenges in GAN\n\n\nImplementation\nThis project can be divided into 7 tasks.\n\nConfigurations\nLoad Dataset\nLoad dataset into batches\nCreate discriminator network\nCreate generator network\nCreate loss function & optimizer\nTraining Loop\n\nFor ease of understanding, you may refer to the iPython notebook, where each task is coded in separate sections.\n\n\nReferences\n\nCoursera Guided Project: “Deep Learning with PyTorch : Generative Adversarial Network”"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/matplotlib-demo/hello.html",
-    "href": "posts/matplotlib-demo/hello.html",
-    "title": "Quarto Basics",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+    "text": "Objective of the Project\nBuild a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.\n\n\nImportant Details\n\nDataset: MNIST handwritten digits dataset (grayscale)\nModel: Generative Adversarial Network (GAN)\nCode available at: https://github.com/aksharasoman/dcgan\nIt can be built in google colab: python-notebook\n\n\n\nOverview\nA Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. Figure 1 gives outline of a GAN model.\n\n\n\n\n\n\nFigure 1: Basic GAN architecture\n\n\n\nA generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.\nGAN loss function consists of two parts: generator loss and discriminator loss. - During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.\n\n\nExpected learnings\n\nWhat is Generative Adversarial Network\nApplications (Current state-of-art performers for these applications)\nWhat is Generator?\nWhat is discriminator?\nUnderstanding architecture\nLoss functions\nHow to generate a fake image using GAN?\nHow to download and transform data in Pytorch?\nHow to calculate input image size for each layer?\nHow to build a GAN model from scratch in pytorch?\nHow to train a Generative Adversarial Network?\n\nHow to train the model on colab with GPU?\nHow to train the model in a remote cluster environment?\n\nChallenges in GAN\n\n\n\nImplementation\nThis project can be divided into 7 tasks.\n\nConfigurations\nLoad dataset\nLoad dataset into batches\nCreate discriminator network\nCreate generator network\nCreate loss function & optimizer\nTraining Loop\n\nFor ease of understanding, you may refer to the iPython notebook, where each task is coded in separate sections.\n\n\nResults Snapshot\n\n\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after the first epoch\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after 15 epochs\n\n\n\n\n\n\n\nReferences\n\nCoursera Guided Project: “Deep Learning with PyTorch : Generative Adversarial Network”"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "akshara soman",
     "section": "",
-    "text": "Generate Handwritten Digits Using GAN\n\n\n\nproject\n\n\ngen-ai\n\n\nGAN\n\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Basics\n\n\n\nmatplotlib\n\n\ncode\n\n\nvisualization\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 9, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Generate Handwritten Digits Using GAN\n\n\n\nproject\n\n\ngen-ai\n\n\nGAN\n\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

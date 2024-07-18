@@ -22,11 +22,11 @@
 
 
 <section id="objective-of-the-project" class="level3">
-<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project:</h3>
+<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project</h3>
 <p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
 </section>
 <section id="important-details" class="level3">
-<h3 class="anchored" data-anchor-id="important-details">Important Details:</h3>
+<h3 class="anchored" data-anchor-id="important-details">Important Details</h3>
 <ol type="1">
 <li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
 <li>Model: Generative Adversarial Network (GAN)</li>
@@ -36,15 +36,47 @@
 </section>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. <span class="citation" data-cites="gan-arch">@gan-arch</span> gives outline of a GAN model. <img src="https://www.aksharasoman.github.io/posts/gan_project/gan-arch.png" id="gan-arch" class="img-fluid" alt="Basic GAN architecture"> A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine. ### Expected learnings: 1. What is Generative Adversarial Network 2. Applications 3. What is Generator? 4. What is discriminator? 5. Understanding architecture 6. Loss functions 7. How to generate a fake image using GAN? 8. How to download and transform data in Pytorch? 9. How to calculate input image size for each layer? 10. How to build a GAN model from scratch in pytorch? 11. How to train the model on colab with GPU?<br>
-1. How to train the model in a remote cluster environment? 12. Challenges in GAN</p>
+<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. Figure&nbsp;1 gives outline of a GAN model.</p>
+<div id="fig-gan-arch" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gan-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gan-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Basic GAN architecture
+</figcaption>
+</figure>
+</div>
+<p>A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.</p>
+<p>GAN loss function consists of two parts: generator loss and discriminator loss. - During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</p>
+</section>
+<section id="expected-learnings" class="level3">
+<h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings</h3>
+<ol type="1">
+<li>What is Generative Adversarial Network</li>
+<li>Applications (Current state-of-art performers for these applications)</li>
+<li>What is Generator?</li>
+<li>What is discriminator?</li>
+<li>Understanding architecture</li>
+<li>Loss functions</li>
+<li>How to generate a fake image using GAN?</li>
+<li>How to download and transform data in Pytorch?</li>
+<li>How to calculate input image size for each layer?</li>
+<li>How to build a GAN model from scratch in pytorch?</li>
+<li>How to train a Generative Adversarial Network?
+<ol type="1">
+<li>How to train the model on colab with GPU?</li>
+<li>How to train the model in a remote cluster environment?</li>
+</ol></li>
+<li>Challenges in GAN</li>
+</ol>
 </section>
 <section id="implementation" class="level3">
 <h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
 <p>This project can be divided into 7 tasks.</p>
 <ol type="1">
 <li>Configurations</li>
-<li>Load Dataset</li>
+<li>Load dataset</li>
 <li>Load dataset into batches</li>
 <li>Create discriminator network</li>
 <li>Create generator network</li>
@@ -52,6 +84,40 @@
 <li>Training Loop</li>
 </ol>
 <p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
+</section>
+<section id="results-snapshot" class="level3">
+<h3 class="anchored" data-anchor-id="results-snapshot">Results Snapshot</h3>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="generated_digits_epoch1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Digits generated after the first epoch"><img src="https://www.aksharasoman.github.io/posts/gan_project/generated_digits_epoch1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Digits generated after the first epoch"></a></p>
+</figure>
+</div>
+<figcaption>Digits generated after the first epoch</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="generated_digits_epoch15.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Digits generated after 15 epochs"><img src="https://www.aksharasoman.github.io/posts/gan_project/generated_digits_epoch15.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Digits generated after 15 epochs"></a></p>
+</figure>
+</div>
+<figcaption>Digits generated after 15 epochs</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
@@ -69,121 +135,7 @@
   <category>pytorch</category>
   <guid>https://www.aksharasoman.github.io/posts/gan_project/</guid>
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/post-with-code/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>This is a post with executable code.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://www.aksharasoman.github.io/posts/post-with-code/</guid>
-  <pubDate>Mon, 08 Jul 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Quarto Basics</title>
-  <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/matplotlib-demo/hello.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>For a demonstration of a line plot on a polar axis, see Figure&nbsp;1.</p>
-<div id="cell-fig-polar" class="cell" data-execution_count="1">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb1-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> plt</span>
-<span id="cb1-3"></span>
-<span id="cb1-4">r <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> np.arange(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.01</span>)</span>
-<span id="cb1-5">theta <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> np.pi <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">*</span> r</span>
-<span id="cb1-6">fig, ax <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> plt.subplots(</span>
-<span id="cb1-7">  subplot_kw <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> {<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'projection'</span>: <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'polar'</span>} </span>
-<span id="cb1-8">)</span>
-<span id="cb1-9">ax.plot(theta, r)</span>
-<span id="cb1-10">ax.set_rticks([<span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1.5</span>, <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span>])</span>
-<span id="cb1-11">ax.grid(<span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">True</span>)</span>
-<span id="cb1-12">plt.show()</span></code></pre></div>
-</details>
-<div class="cell-output cell-output-display">
-<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://www.aksharasoman.github.io/posts/matplotlib-demo/hello_files/figure-html/fig-polar-output-1.png" width="450" height="439" class="figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A line plot on a polar axis
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-
-
-
- ]]></description>
-  <category>matplotlib</category>
-  <category>code</category>
-  <category>visualization</category>
-  <guid>https://www.aksharasoman.github.io/posts/matplotlib-demo/hello.html</guid>
-  <pubDate>Mon, 08 Jul 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 </channel>
 </rss>
