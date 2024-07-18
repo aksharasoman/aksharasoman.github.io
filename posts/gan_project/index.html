@@ -211,7 +211,10 @@ Figure&nbsp;1: Basic GAN architecture
 </figure>
 </div>
 <p>A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.</p>
-<p>GAN loss function consists of two parts: generator loss and discriminator loss. - During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</p>
+<p>GAN loss function consists of two parts: generator loss and discriminator loss.</p>
+<ul>
+<li>During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</li>
+</ul>
 </section>
 <section id="expected-learnings" class="level3">
 <h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings</h3>
@@ -713,7 +716,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
