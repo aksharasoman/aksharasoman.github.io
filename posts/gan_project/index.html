@@ -170,7 +170,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objective-of-the-project" id="toc-objective-of-the-project" class="nav-link active" data-scroll-target="#objective-of-the-project">Objective of the Project</a></li>
   <li><a href="#important-details" id="toc-important-details" class="nav-link" data-scroll-target="#important-details">Important Details</a></li>
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#expected-learnings" id="toc-expected-learnings" class="nav-link" data-scroll-target="#expected-learnings">Expected learnings</a></li>
   <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
   <li><a href="#results-snapshot" id="toc-results-snapshot" class="nav-link" data-scroll-target="#results-snapshot">Results Snapshot</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -212,12 +211,45 @@ Figure&nbsp;1: Basic GAN architecture
 </div>
 <p>A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.</p>
 <p>GAN loss function consists of two parts: generator loss and discriminator loss.</p>
-<ul>
-<li>During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</li>
-</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GAN Training Strategy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</p>
+</div>
+</div>
 </section>
-<section id="expected-learnings" class="level3">
-<h3 class="anchored" data-anchor-id="expected-learnings">Expected learnings</h3>
+<section id="implementation" class="level3">
+<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
+<p>This project can be divided into 7 tasks.</p>
+<ol type="1">
+<li>Configurations</li>
+<li>Load dataset</li>
+<li>Load dataset into batches</li>
+<li>Create discriminator network</li>
+<li>Create generator network</li>
+<li>Create loss function &amp; optimizer</li>
+<li>Training Loop</li>
+</ol>
+<p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Expected learnings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ol type="1">
 <li>What is Generative Adversarial Network</li>
 <li>Applications (Current state-of-art performers for these applications)</li>
@@ -236,20 +268,9 @@ Figure&nbsp;1: Basic GAN architecture
 </ol></li>
 <li>Challenges in GAN</li>
 </ol>
-</section>
-<section id="implementation" class="level3">
-<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
-<p>This project can be divided into 7 tasks.</p>
-<ol type="1">
-<li>Configurations</li>
-<li>Load dataset</li>
-<li>Load dataset into batches</li>
-<li>Create discriminator network</li>
-<li>Create generator network</li>
-<li>Create loss function &amp; optimizer</li>
-<li>Training Loop</li>
-</ol>
-<p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="results-snapshot" class="level3">
 <h3 class="anchored" data-anchor-id="results-snapshot">Results Snapshot</h3>
@@ -716,7 +737,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
