@@ -1,6 +1,8 @@
 [
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/posts/gan_project/index.html"
+    ]
   }
 ]
