@@ -10,28 +10,6 @@
 <atom:link href="https://www.aksharasoman.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
 <generator>quarto-1.5.53</generator>
-<lastBuildDate>Fri, 19 Jul 2024 11:50:08 GMT</lastBuildDate>
-<item>
-  <title></title>
-  <link>https://www.aksharasoman.github.io/posts/gan_project/Applications of GANs.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="applications-of-gans" class="level1">
-
-<ol type="1">
-<li>Image Synthesis</li>
-<li></li>
-</ol>
-
-
-</section>
-
- ]]></description>
-  <guid>https://www.aksharasoman.github.io/posts/gan_project/Applications of GANs.html</guid>
-  <pubDate>Fri, 19 Jul 2024 11:50:08 GMT</pubDate>
-</item>
+<lastBuildDate>Fri, 19 Jul 2024 11:55:36 GMT</lastBuildDate>
 </channel>
 </rss>
