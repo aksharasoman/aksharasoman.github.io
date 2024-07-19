@@ -203,27 +203,5 @@ Possible Extensions
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
-<item>
-  <title></title>
-  <link>https://www.aksharasoman.github.io/posts/gan_project/ApplicationsGANs.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="applications-of-gans" class="level1">
-
-<ol type="1">
-<li>Image Synthesis</li>
-<li></li>
-</ol>
-
-
-</section>
-
- ]]></description>
-  <guid>https://www.aksharasoman.github.io/posts/gan_project/ApplicationsGANs.html</guid>
-  <pubDate>Fri, 19 Jul 2024 12:15:42 GMT</pubDate>
-</item>
 </channel>
 </rss>
