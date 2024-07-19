@@ -90,7 +90,7 @@ Expected learnings
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>What is Generative Adversarial Network</li>
-<li><a href="_Applications of GANs.md">Applications of GANs</a>(Current state-of-art performers for these applications)</li>
+<li><a href="../../posts/gan_project/ApplicationsGANs.html">Applications of GANs</a>(Current state-of-art performers for these applications)</li>
 <li>What is Generator?</li>
 <li>What is discriminator?</li>
 <li>Understanding architecture</li>
@@ -202,6 +202,28 @@ Possible Extensions
   <guid>https://www.aksharasoman.github.io/posts/gan_project/</guid>
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title></title>
+  <link>https://www.aksharasoman.github.io/posts/gan_project/ApplicationsGANs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="applications-of-gans" class="level1">
+
+<ol type="1">
+<li>Image Synthesis</li>
+<li></li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.aksharasoman.github.io/posts/gan_project/ApplicationsGANs.html</guid>
+  <pubDate>Fri, 19 Jul 2024 12:15:42 GMT</pubDate>
 </item>
 </channel>
 </rss>
