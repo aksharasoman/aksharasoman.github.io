@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Akshara Soman">
+<meta name="dcterms.date" content="2024-07-12">
 
-<title>akshara soman</title>
+<title>Generate Handwritten Digits Using GAN – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/as3.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/as3.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,68 +72,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="akshara soman" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -139,10 +84,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/as3.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/as3.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">akshara soman</span>
     </a>
   </div>
@@ -153,7 +98,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -176,45 +121,201 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">akshara soman</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Generate Handwritten Digits Using GAN</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">project</div>
+                <div class="quarto-category">gen-ai</div>
+                <div class="quarto-category">GAN</div>
+                <div class="quarto-category">pytorch</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Akshara Soman </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 12, 2024</p>
+      </div>
+    </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">July 19, 2024</p>
+      </div>
+    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objective-of-the-project" id="toc-objective-of-the-project" class="nav-link active" data-scroll-target="#objective-of-the-project">Objective of the Project</a></li>
+  <li><a href="#important-details" id="toc-important-details" class="nav-link" data-scroll-target="#important-details">Important Details</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
+  <li><a href="#results-snapshot" id="toc-results-snapshot" class="nav-link" data-scroll-target="#results-snapshot">Results Snapshot</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
+<section id="objective-of-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project</h3>
+<p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
+</section>
+<section id="important-details" class="level3">
+<h3 class="anchored" data-anchor-id="important-details">Important Details</h3>
+<ol type="1">
+<li>Dataset: MNIST handwritten digits dataset (grayscale)</li>
+<li>Model: Generative Adversarial Network (GAN)</li>
+<li>Code available at: <a href="https://github.com/aksharasoman/dcgan" class="uri">https://github.com/aksharasoman/dcgan</a></li>
+<li>It can be built in google colab: <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">python-notebook</a></li>
+</ol>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>A Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. <a href="#fig-gan-arch" class="quarto-xref">Figure&nbsp;1</a> gives outline of a GAN model.</p>
+<div id="fig-gan-arch" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gan-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="gan_arch.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gan-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Basic GAN architecture
+</figcaption>
+</figure>
+</div>
+<p>A generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.</p>
+<p>GAN loss function consists of two parts: generator loss and discriminator loss.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GAN Training Strategy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>During generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.</p>
+</div>
+</div>
+</section>
+<section id="implementation" class="level3">
+<h3 class="anchored" data-anchor-id="implementation">Implementation</h3>
+<p>This project can be divided into 7 tasks.</p>
+<ol type="1">
+<li>Configurations</li>
+<li>Load dataset</li>
+<li>Load dataset into batches</li>
+<li>Create discriminator network</li>
+<li>Create generator network</li>
+<li>Create loss function &amp; optimizer</li>
+<li>Training Loop</li>
+</ol>
+<p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Expected learnings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>What is Generative Adversarial Network</li>
+<li>Applications (Current state-of-art performers for these applications)</li>
+<li>What is Generator?</li>
+<li>What is discriminator?</li>
+<li>Understanding architecture</li>
+<li>Loss functions</li>
+<li>How to generate a fake image using GAN?</li>
+<li>How to download and transform data in Pytorch?</li>
+<li>How to calculate input image size for each layer?</li>
+<li>How to build a GAN model from scratch in pytorch?</li>
+<li>How to train a Generative Adversarial Network?
+<ol type="1">
+<li>How to train the model on colab with GPU?</li>
+<li>How to train the model in a remote cluster environment?</li>
+</ol></li>
+<li>Challenges in GAN</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="results-snapshot" class="level3">
+<h3 class="anchored" data-anchor-id="results-snapshot">Results Snapshot</h3>
+<div>
 
 </div>
-<div class="listing-no-matching d-none">
-No matching items
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="generated_digits_epoch1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Digits generated after the first epoch"><img src="generated_digits_epoch1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Digits generated after the first epoch"></a></p>
+</figure>
 </div>
-</div></main> <!-- /main -->
+<figcaption>Digits generated after the first epoch</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="generated_digits_epoch15.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Digits generated after 15 epochs"><img src="generated_digits_epoch15.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Digits generated after 15 epochs"></a></p>
+</figure>
+</div>
+<figcaption>Digits generated after 15 epochs</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ol type="1">
+<li>Coursera Guided Project: “<a href="https://www.coursera.org/projects/deep-learning-with-pytorch-generative-adversarial-network#details">Deep Learning with PyTorch : Generative Adversarial Network</a>”</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -636,6 +737,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
