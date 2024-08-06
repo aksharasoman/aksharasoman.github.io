@@ -32,14 +32,14 @@
     "href": "posts/coding-practice/index.html",
     "title": "Coding Practice - Solution to Leetcode Problems",
     "section": "",
-    "text": "This is a collection of solutions to common Leetcode questions (in progress), based on a list compiled by Neetcode.\nThe solutions are in Python3. Required explanations are provided as comments within the script file. If more detailed explanations are necessary, they will be included in an accompanying markdown file.\n\nYou can find the list of questions that are covered in this repo here\n\nI recommend the following line-of-action if you are attempting a problem for the FIRST time:\n\n\n\nneetcode-sop\n\n\n\n\nIf you face any issues or have any suggestions, please feel free to open an issue. I will try to get back to you as soon as possible.\n\n\n\nIf you want to contact me, you can reach me via email or visit my website."
+    "text": "This is a collection of solutions_(in progress)_ to common Leetcode questions, based on a list compiled by Neetcode.\nThe solutions are in Python3. Required explanations are provided as comments within the script file. If more detailed explanations are necessary, they will be included in an accompanying markdown file.\n\nYou can find the list of questions that are covered in this repo here\n\nI recommend the following line-of-action if you are attempting a problem for the FIRST time:\n\n\n\nneetcode-sop\n\n\n\n\nIf you face any issues or have any suggestions, please feel free to open an issue in the github repo. I will try to get back to you as soon as possible.\n\n\n\nIf you want to contact me, you can reach me via email or visit my website."
   },
   {
     "objectID": "posts/coding-practice/index.html#issues",
     "href": "posts/coding-practice/index.html#issues",
     "title": "Coding Practice - Solution to Leetcode Problems",
     "section": "",
-    "text": "If you face any issues or have any suggestions, please feel free to open an issue. I will try to get back to you as soon as possible."
+    "text": "If you face any issues or have any suggestions, please feel free to open an issue in the github repo. I will try to get back to you as soon as possible."
   },
   {
     "objectID": "posts/coding-practice/index.html#more-questions",
