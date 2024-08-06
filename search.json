@@ -7,6 +7,20 @@
     "text": "About this blog"
   },
   {
+    "objectID": "posts/coding-practice/questions_list.html",
+    "href": "posts/coding-practice/questions_list.html",
+    "title": "List of Questions & Solutions",
+    "section": "",
+    "text": "List of Questions & Solutions\nA full list of the topics and questions covered in this repo (so far).\n\n\nAugust Week 1 : Solutions counter - 0/75 ## Binary Search\n\n\n\n\nLeetcode Link\nSolution\nRemarks\n\n\n\n\nFind Minimum in Rotated Sorted Array\nmin_in_rotated_array.py"
+  },
+  {
+    "objectID": "posts/001_gan_project/index.html",
+    "href": "posts/001_gan_project/index.html",
+    "title": "Generate Handwritten Digits Using GAN",
+    "section": "",
+    "text": "Objective of the Project\nBuild a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.\n\n\nImportant Details\n\nDataset: MNIST handwritten digits dataset (grayscale)\nModel: Generative Adversarial Network (GAN)\nCode available at: https://github.com/aksharasoman/dcgan\nIt can be built in google colab: python-notebook\n\n\n\nOverview\nA Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. Figure 1 gives outline of a GAN model.\n\n\n\n\n\n\nFigure 1: Basic GAN architecture\n\n\n\nA generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.\nGAN loss function consists of two parts: generator loss and discriminator loss.\n\n\n\n\n\n\nGAN Training Strategy\n\n\n\nDuring generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.\n\n\n\n\nImplementation\nThis project can be divided into 7 tasks.\n\nConfigurations\nLoad dataset\nLoad dataset into batches\nCreate discriminator network\nCreate generator network\nCreate loss function & optimizer\nTraining Loop\n\nFor ease of understanding, you may refer to the iPython notebook, where each task is coded in separate sections.\n\n\n\n\n\n\nExpected learnings\n\n\n\n\n\n\nWhat is Generative Adversarial Network\nApplications (Current state-of-art performers for these applications)\nWhat is Generator?\nWhat is discriminator?\nUnderstanding architecture\nLoss functions\nHow to generate a fake image using GAN?\nHow to download and transform data in Pytorch?\nHow to calculate input image size for each layer?\nHow to build a GAN model from scratch in pytorch?\nHow to train a Generative Adversarial Network?\n\nHow to train the model on colab with GPU?\nHow to train the model in a remote cluster environment?\n\nChallenges in GAN\n\n\n\n\n\n\nResults Snapshot\n\n\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after the first epoch\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after 15 epochs\n\n\n\n\n\n\n\nReferences\n\nCoursera Guided Project: “Deep Learning with PyTorch : Generative Adversarial Network”"
+  },
+  {
     "objectID": "posts/coding-practice/index.html",
     "href": "posts/coding-practice/index.html",
     "title": "Coding Practice - Solution to Leetcode Problems",
@@ -28,24 +42,10 @@
     "text": "If you want to contact me, you can reach me via email or visit my website."
   },
   {
-    "objectID": "posts/001_gan_project/index.html",
-    "href": "posts/001_gan_project/index.html",
-    "title": "Generate Handwritten Digits Using GAN",
-    "section": "",
-    "text": "Objective of the Project\nBuild a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.\n\n\nImportant Details\n\nDataset: MNIST handwritten digits dataset (grayscale)\nModel: Generative Adversarial Network (GAN)\nCode available at: https://github.com/aksharasoman/dcgan\nIt can be built in google colab: python-notebook\n\n\n\nOverview\nA Generative Adversarial Network (GAN) model has two major components: a generator and a discriminator. Figure 1 gives outline of a GAN model.\n\n\n\n\n\n\nFigure 1: Basic GAN architecture\n\n\n\nA generator creates fake samples that mimic the real samples provided to the discriminator network. The discriminator is a binary classifier that evaluates these inputs, determining whether each one is real or fake. The generator’s objective is to produce fake samples that are so similar to real ones that the discriminator incorrectly identifies them as genuine.\nGAN loss function consists of two parts: generator loss and discriminator loss.\n\n\n\n\n\n\nGAN Training Strategy\n\n\n\nDuring generator training, the discriminator’s weights are kept constant and are not updated, and vice versa.\n\n\n\n\nImplementation\nThis project can be divided into 7 tasks.\n\nConfigurations\nLoad dataset\nLoad dataset into batches\nCreate discriminator network\nCreate generator network\nCreate loss function & optimizer\nTraining Loop\n\nFor ease of understanding, you may refer to the iPython notebook, where each task is coded in separate sections.\n\n\n\n\n\n\nExpected learnings\n\n\n\n\n\n\nWhat is Generative Adversarial Network\nApplications (Current state-of-art performers for these applications)\nWhat is Generator?\nWhat is discriminator?\nUnderstanding architecture\nLoss functions\nHow to generate a fake image using GAN?\nHow to download and transform data in Pytorch?\nHow to calculate input image size for each layer?\nHow to build a GAN model from scratch in pytorch?\nHow to train a Generative Adversarial Network?\n\nHow to train the model on colab with GPU?\nHow to train the model in a remote cluster environment?\n\nChallenges in GAN\n\n\n\n\n\n\nResults Snapshot\n\n\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after the first epoch\n\n\n\n\n\n\n\n\n\n\n\nDigits generated after 15 epochs\n\n\n\n\n\n\n\nReferences\n\nCoursera Guided Project: “Deep Learning with PyTorch : Generative Adversarial Network”"
-  },
-  {
-    "objectID": "posts/coding-practice/questions_list.html",
-    "href": "posts/coding-practice/questions_list.html",
-    "title": "List of Questions & Solutions",
-    "section": "",
-    "text": "List of Questions & Solutions\nA full list of the topics and questions covered in this repo (so far).\n\n\nAugust Week 1 : Solutions counter - 0/75 ## Binary Search\n\n\n\n\nLeetcode Link\nSolution\nRemarks\n\n\n\n\nFind Minimum in Rotated Sorted Array\nmin_in_rotated_array.py"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "akshara soman",
     "section": "",
-    "text": "Generate Handwritten Digits Using GAN\n\n\n\nproject\n\n\ngen-ai\n\n\nGAN\n\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Generate Handwritten Digits Using GAN\n\n\n\nproject\n\n\ngen-ai\n\n\nGAN\n\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoding Practice - Solution to Leetcode Problems\n\n\n\ncoding\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

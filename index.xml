@@ -162,5 +162,47 @@ Expected learnings
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/001_gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
+<item>
+  <title>Coding Practice - Solution to Leetcode Problems</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/coding-practice/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="leetcode-solutions" class="level1">
+<h1>Leetcode Solutions</h1>
+<p>This is a collection of solutions to common Leetcode questions <em>(in progress)</em>, based on a list compiled by <a href="https://neetcode.io/practice">Neetcode</a>.</p>
+<p>The solutions are in Python3. Required explanations are provided as comments within the script file. If more detailed explanations are necessary, they will be included in an accompanying markdown file.</p>
+<ul>
+<li>You can find the list of questions that are covered in this repo <a href="questions_list.qmdmd">here</a></li>
+</ul>
+<p>I recommend the following line-of-action if you are attempting a problem for the <em>FIRST time</em>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.aksharasoman.github.io/posts/coding-practice/images/neetcode-sop.png" class="img-fluid figure-img"></p>
+<figcaption>neetcode-sop</figcaption>
+</figure>
+</div>
+<section id="issues" class="level2">
+<h2 class="anchored" data-anchor-id="issues">Issues</h2>
+<p>If you face any issues or have any suggestions, please feel free to open an issue. I will try to get back to you as soon as possible.</p>
+</section>
+<section id="more-questions" class="level2">
+<h2 class="anchored" data-anchor-id="more-questions">More questions?</h2>
+<p>If you want to contact me, you can reach me via <a href="mailto:aksharasoman@gmail.com">email</a> or visit <a href="https://aksharasoman.github.io">my website</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <guid>https://www.aksharasoman.github.io/posts/coding-practice/</guid>
+  <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/coding-practice/coding.png" medium="image" type="image/png"/>
+</item>
 </channel>
 </rss>
