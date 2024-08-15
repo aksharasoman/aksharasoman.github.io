@@ -30,7 +30,7 @@
 </section>
 <section id="chat-gui" class="level4">
 <h4 class="anchored" data-anchor-id="chat-gui">Chat GUI</h4>
-<p>The ‘ChatInterface’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
+<p>The ‘<a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a>’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
 </section>
 </section>
 <section id="problem-statement-of-the-project" class="level3">
@@ -39,11 +39,12 @@
 <section id="tasks" class="level4">
 <h4 class="anchored" data-anchor-id="tasks">Tasks:</h4>
 <ol type="1">
-<li>Configuration: import necessary LLM libraries and api key</li>
+<li>Configuration: import necessary LLM libraries and <a href="https://aistudio.google.com/app/apikey">api key</a></li>
 <li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
-<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept.</li>
-<li>Build chat interface</li>
-<li>Deploy the locally and in a webserver</li>
+<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept. Eg: <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">Build an interactive chat</a><br>
+</li>
+<li>Build <a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">chat interface</a></li>
+<li>Deploy locally and in a webserver</li>
 </ol>
 <p>More information on each project task can be found in the jupyter notebook <a href="../../posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html">preview</a>.</p>
 </section>
@@ -54,7 +55,7 @@
 </section>
 <section id="chatbot---a-snapshot" class="level3">
 <h3 class="anchored" data-anchor-id="chatbot---a-snapshot">Chatbot - A snapshot</h3>
-<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="v2_pizzabot_screenRecording.mov"></video></div>.<p></p>
+<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div>.<p></p>
 <p>I deployed the chatbot using Ploomber, but the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
 </section>
 <section id="observations" class="level3">
