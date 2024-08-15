@@ -26,7 +26,11 @@
 <h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
 <section id="llm-api" class="level4">
 <h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
-<p>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice. #### Chat GUI The ‘ChatInterface’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
+<p>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice.</p>
+</section>
+<section id="chat-gui" class="level4">
+<h4 class="anchored" data-anchor-id="chat-gui">Chat GUI</h4>
+<p>The ‘ChatInterface’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
 </section>
 </section>
 <section id="problem-statement-of-the-project" class="level3">
@@ -41,7 +45,7 @@
 <li>Build chat interface</li>
 <li>Deploy the locally and in a webserver</li>
 </ol>
-<p>More information on each project task can be found in the jupyter notebook <a href="002_chatbot/v2_gemini-pizza-chatbot_chatInterface.ipynb">preview</a>.</p>
+<p>More information on each project task can be found in the jupyter notebook <a href="../../posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html">preview</a>.</p>
 </section>
 </section>
 <section id="code" class="level3">
