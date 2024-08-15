@@ -182,19 +182,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Building a Chatbot using Gemini API</h1>
 <section id="task-0-configure-api-key" class="level4">
 <h4 class="anchored" data-anchor-id="task-0-configure-api-key">Task 0: Configure API key</h4>
-<p>The Python SDK for the Gemini API is contained in the google-generativeai package.</p>
-<p>Install dependency using: <em>pip install -q -U google-generativeai </em></p>
-<p>Do not check an API key into your version control system but assign it as an environment variable instead: export API_KEY=<your_api_key></your_api_key></p>
+<p>The Python SDK for the <a href="https://aistudio.google.com/app/apikey">Gemini API</a> is contained in the google-generativeai package.</p>
+<p>Install dependency using: <code>pip install -q -U google-generativeai</code></p>
+<p>Do not check an API key into your version control system.</p>
 </section>
 <section id="task-1-initialize-the-model" class="level4">
 <h4 class="anchored" data-anchor-id="task-1-initialize-the-model">Task 1: Initialize the model</h4>
 <div id="cell-4" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !pip install google-generativeai</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> google.generativeai <span class="im">as</span> genai</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'gemini_api_key.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>: <span class="co"># rename file to 'llm_api_key.txt'</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    API_KEY <span class="op">=</span> <span class="bu">file</span>.read()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>genai.configure(api_key<span class="op">=</span>API_KEY)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> google.generativeai <span class="im">as</span> genai</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'gemini_api_key.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>: <span class="co"># rename file to 'llm_api_key.txt'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    API_KEY <span class="op">=</span> <span class="bu">file</span>.read()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>genai.configure(api_key<span class="op">=</span>API_KEY)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Use system instructions to steer the behavior of the model</p>
 <div id="cell-6" class="cell" data-execution_count="12">
