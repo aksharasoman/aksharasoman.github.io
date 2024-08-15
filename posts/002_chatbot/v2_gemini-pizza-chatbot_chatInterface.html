@@ -189,35 +189,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="task-1-initialize-the-model" class="level4">
 <h4 class="anchored" data-anchor-id="task-1-initialize-the-model">Task 1: Initialize the model</h4>
 <div id="cell-4" class="cell" data-execution_count="11">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># !pip install google-generativeai</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> google.generativeai <span class="im">as</span> genai</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'gemini_api_key.txt'</span>,<span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>: <span class="co"># rename file to 'llm_api_key.txt'</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    API_KEY <span class="op">=</span> <span class="bu">file</span>.read()</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>genai.configure(api_key<span class="op">=</span>API_KEY)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Use system instructions to steer the behavior of the model</p>
 <div id="cell-6" class="cell" data-execution_count="12">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a context manager to open the file</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'pizzabot_system_instruction.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    sys_instr <span class="op">=</span> <span class="bu">file</span>.read()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div id="cell-7" class="cell" data-execution_count="13">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>model<span class="op">=</span>genai.GenerativeModel(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  model_name<span class="op">=</span><span class="st">"gemini-1.5-flash"</span>,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  system_instruction<span class="op">=</span>sys_instr)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">##### 2.1 Initialize the chat</span></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>chat <span class="op">=</span> model.start_chat(history<span class="op">=</span>[])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section>
 <section id="task-2-receive-prompts-and-save-context-and-generate-chat-responses" class="level4">
@@ -226,28 +217,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Example: <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">Build an interactive chat</a></p>
 <p>The <strong>ChatSession.send_message</strong> method returns the same <em>GenerateContentResponse</em> type as <strong>GenerativeModel.generate_content</strong>. It also appends your message and the response to the chat history</p>
 <div id="cell-10" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> panel <span class="im">as</span> pn</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_chat(value,user,instance):</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> chat.send_message(value)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># return f"{response.text}"</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pn.chat.ChatMessage(response.text, user<span class="op">=</span><span class="st">"Pizza Bot"</span>, avatar<span class="op">=</span><span class="st">"🐼"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section>
 <section id="task-3-build-gui" class="level4">
 <h4 class="anchored" data-anchor-id="task-3-build-gui">Task 3: Build GUI</h4>
 <p>Help: <a href="https://panel.holoviz.org/tutorials/basic/build_chatbot.html">doc</a></p>
 <div id="cell-13" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pn.extension(<span class="st">"perspective"</span>)<span class="co">#initialization</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>chat_bot <span class="op">=</span> pn.chat.ChatInterface(help_text<span class="op">=</span><span class="st">"Welcome to Pizza Paradise! What would like to order?"</span>,callback<span class="op">=</span>run_chat,</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                                 max_height<span class="op">=</span><span class="dv">500</span>,max_width<span class="op">=</span><span class="dv">500</span>,show_rerun<span class="op">=</span><span class="va">False</span>,show_clear<span class="op">=</span><span class="va">False</span>,</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                                 )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-display">
 <script type="application/javascript">
 (function(root) {
@@ -862,14 +847,11 @@ if (window.Jupyter !== undefined) {
 <h4 class="anchored" data-anchor-id="task-4-serving-the-notebook">Task 4: Serving the Notebook</h4>
 <p>We’ll organize our components in a nicely styled template (MaterialTemplate) and mark it .servable() to add it to our served app</p>
 <div id="cell-17" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pn.template.MaterialTemplate(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    site<span class="op">=</span><span class="st">"Panel"</span>,</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Order bot of Pizza Paradise!"</span>,</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    main<span class="op">=</span>[chat_bot],</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>).servable()<span class="op">;</span> <span class="co"># The ; is needed in the notebook to not display the template. Its not needed in a script</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p><strong>Deploy the app locally:</strong></p>
 <p>Run in terminal:</p>

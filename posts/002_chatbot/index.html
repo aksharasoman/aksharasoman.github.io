@@ -9,7 +9,7 @@
 <meta name="author" content="Akshara Soman">
 <meta name="dcterms.date" content="2024-08-15">
 
-<title>Order-Bot for a Pizza Restaurant using free Gemini LLM API – akshara soman</title>
+<title>Chatbot for a Pizza Restaurant using free Gemini LLM API – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Order-Bot for a Pizza Restaurant using free Gemini LLM API</h1>
+      <h1 class="title">Chatbot for a Pizza Restaurant using free Gemini LLM API</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">projectx</div>
                 <div class="quarto-category">gen-ai</div>
@@ -167,7 +167,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#major-implementation-aspects" id="toc-major-implementation-aspects" class="nav-link active" data-scroll-target="#major-implementation-aspects">Major Implementation Aspects</a></li>
-  <li><a href="#problem-statement-of-the-project" id="toc-problem-statement-of-the-project" class="nav-link" data-scroll-target="#problem-statement-of-the-project">Problem Statement of the project</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   <li><a href="#chatbot---a-snapshot" id="toc-chatbot---a-snapshot" class="nav-link" data-scroll-target="#chatbot---a-snapshot">Chatbot - A snapshot</a></li>
   <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">Observations</a></li>
@@ -185,33 +186,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>In this project, we implementat of a Chatbot based on Gemini 1.5 Flash LLM to design an orderbot for a pizza restaurant to streamline its customer orders. We used the free version of the Gemini API. A user-friendly GUI is built using opensource python library called Panel.</p>
+<p>This project involves developing an orderbot for a pizza restaurant using the <strong>Gemini 1.5 Flash LLM</strong>. We implemented a chatbot to streamline customer orders and built a user-friendly GUI with the open-source Python library, <strong>Panel</strong>. The project utilizes the free tier of the Gemini API.</p>
 <section id="major-implementation-aspects" class="level3">
 <h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
 <section id="llm-api" class="level4">
 <h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
-<p>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice.</p>
+<p>The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice. <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class of gemini enables us to have freeform conversation over multiple turns.</p>
 </section>
 <section id="chat-gui" class="level4">
 <h4 class="anchored" data-anchor-id="chat-gui">Chat GUI</h4>
 <p>The ‘<a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a>’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
 </section>
 </section>
-<section id="problem-statement-of-the-project" class="level3">
-<h3 class="anchored" data-anchor-id="problem-statement-of-the-project">Problem Statement of the project</h3>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
 <p>Build a chatbot for a pizzeria for taking orders using Gemini 1.5 Flash model and build GUI using “Panel” library</p>
-<section id="tasks" class="level4">
-<h4 class="anchored" data-anchor-id="tasks">Tasks:</h4>
+</section>
+<section id="tasks" class="level3">
+<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
 <ol type="1">
 <li>Configuration: import necessary LLM libraries and <a href="https://aistudio.google.com/app/apikey">api key</a></li>
 <li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
-<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept. Eg: <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">Build an interactive chat</a><br>
-</li>
+<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept - Utilize <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class of Gemini.</li>
 <li>Build <a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">chat interface</a></li>
 <li>Deploy locally and in a webserver</li>
 </ol>
-<p>More information on each project task can be found in the jupyter notebook <a href="../../posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html">preview</a>.</p>
-</section>
+<p>More information on each project task can be found in the <a href="../../posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html">jupyter notebook preview</a>.</p>
 </section>
 <section id="code" class="level3">
 <h3 class="anchored" data-anchor-id="code">Code</h3>
@@ -230,6 +230,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="challenges" class="level3">
 <h3 class="anchored" data-anchor-id="challenges">Challenges</h3>
+<ol type="1">
+<li>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API.</li>
+</ol>
 </section>
 <section id="how-to-deploy-a-panel-based-app" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</h3>
