@@ -58,14 +58,9 @@
 </section>
 <section id="chatbot---a-snapshot" class="level3">
 <h3 class="anchored" data-anchor-id="chatbot---a-snapshot">Chatbot - A snapshot</h3>
-<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div>.<p></p>
+<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div><p></p>
 <p>I deployed the chatbot using Ploomber, but the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
-</section>
-<section id="observations" class="level3">
-<h3 class="anchored" data-anchor-id="observations">Observations</h3>
-<ul>
-<li>Importance of Prompt engineering</li>
-</ul>
+<p>%% RESTART HERE ### Observations - Importance of Prompt engineering</p>
 </section>
 <section id="challenges" class="level3">
 <h3 class="anchored" data-anchor-id="challenges">Challenges</h3>
@@ -80,8 +75,8 @@
 <li>Another option: <a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">Deploy a Python Visualization Panel App to Google Cloud Run</a> - didn’t do it because of the cost involved. It can be deployed only for a limited duration of time. Pizzabot deployed:<a href="https://broken-wildflower-4698.ploomberapp.io/app">Order bot of Pizza Paradise!</a></li>
 </ol>
 </section>
-<section id="related-courses-to-imrpove-your-understanding" class="level3">
-<h3 class="anchored" data-anchor-id="related-courses-to-imrpove-your-understanding">Related Courses to imrpove your understanding:</h3>
+<section id="related-courses-to-improve-your-understanding" class="level3">
+<h3 class="anchored" data-anchor-id="related-courses-to-improve-your-understanding">Related Courses to improve your understanding:</h3>
 </section>
 <section id="extensions---ideas" class="level3">
 <h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
