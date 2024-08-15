@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title column-body">
       <h1 class="title">Order-Bot for a Pizza Restaurant using free Gemini LLM API</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">project</div>
+                <div class="quarto-category">projectx</div>
                 <div class="quarto-category">gen-ai</div>
                 <div class="quarto-category">chatbot</div>
                 <div class="quarto-category">LLM</div>
@@ -161,8 +161,22 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#major-implementation-aspects" id="toc-major-implementation-aspects" class="nav-link active" data-scroll-target="#major-implementation-aspects">Major Implementation Aspects</a></li>
+  <li><a href="#problem-statement-of-the-project" id="toc-problem-statement-of-the-project" class="nav-link" data-scroll-target="#problem-statement-of-the-project">Problem Statement of the project</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#chatbot---a-snapshot" id="toc-chatbot---a-snapshot" class="nav-link" data-scroll-target="#chatbot---a-snapshot">Chatbot - A snapshot</a></li>
+  <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">Observations</a></li>
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
+  <li><a href="#how-to-deploy-a-panel-based-app" id="toc-how-to-deploy-a-panel-based-app" class="nav-link" data-scroll-target="#how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</a></li>
+  <li><a href="#related-courses-to-imrpove-your-understanding" id="toc-related-courses-to-imrpove-your-understanding" class="nav-link" data-scroll-target="#related-courses-to-imrpove-your-understanding">Related Courses to imrpove your understanding:</a></li>
+  <li><a href="#extensions---ideas" id="toc-extensions---ideas" class="nav-link" data-scroll-target="#extensions---ideas">Extensions - Ideas</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -172,55 +186,67 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>In this project, we implementat of a Chatbot based on Gemini 1.5 Flash LLM to design an orderbot for a pizza restaurant to streamline its customer orders. We used the free version of the Gemini API. A user-friendly GUI is built using opensource python library called Panel.</p>
-<!--
-### Major Implementation Aspects
-#### LLM API
-   OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. 
-   The Gemini API key can be obtained [here](https://aistudio.google.com/app/apikey).
-   [Gemini API quickstart](https://ai.google.dev/gemini-api/docs/quickstart?lang=python) shows you how to get started with the Gemini API using the SDK of your choice.
-#### Chat GUI
-The 'ChatInterface' component of the [Panel](https://panel.holoviz.org/index.html), an open-source python library is used to build the chatbot GUI.
+<section id="major-implementation-aspects" class="level3">
+<h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
+<section id="llm-api" class="level4">
+<h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
+<p>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice. #### Chat GUI The ‘ChatInterface’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
+</section>
+</section>
+<section id="problem-statement-of-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement-of-the-project">Problem Statement of the project</h3>
+<p>Build a chatbot for a pizzeria for taking orders using Gemini 1.5 Flash model and build GUI using “Panel” library</p>
+<section id="tasks" class="level4">
+<h4 class="anchored" data-anchor-id="tasks">Tasks:</h4>
+<ol type="1">
+<li>Configuration: import necessary LLM libraries and api key</li>
+<li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
+<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept.</li>
+<li>Build chat interface</li>
+<li>Deploy the locally and in a webserver</li>
+</ol>
+<p>More information on each project task can be found in the jupyter notebook <a href="002_chatbot/v2_gemini-pizza-chatbot_chatInterface.ipynb">preview</a>.</p>
+</section>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>Github Repository: <a href="https://github.com/aksharasoman/chatbot.git">link</a></p>
+</section>
+<section id="chatbot---a-snapshot" class="level3">
+<h3 class="anchored" data-anchor-id="chatbot---a-snapshot">Chatbot - A snapshot</h3>
+<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="v2_pizzabot_screenRecording.mov"></video></div>.<p></p>
+<p>I deployed the chatbot using Ploomber, but the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
+</section>
+<section id="observations" class="level3">
+<h3 class="anchored" data-anchor-id="observations">Observations</h3>
+<ul>
+<li>Importance of Prompt engineering</li>
+</ul>
+</section>
+<section id="challenges" class="level3">
+<h3 class="anchored" data-anchor-id="challenges">Challenges</h3>
+</section>
+<section id="how-to-deploy-a-panel-based-app" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</h3>
+<ol type="1">
+<li>Deploy an App built using Panel using Ploomber</li>
+<li>Another option: <a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">Deploy a Python Visualization Panel App to Google Cloud Run</a> - didn’t do it because of the cost involved. It can be deployed only for a limited duration of time. Pizzabot deployed:<a href="https://broken-wildflower-4698.ploomberapp.io/app">Order bot of Pizza Paradise!</a></li>
+</ol>
+</section>
+<section id="related-courses-to-imrpove-your-understanding" class="level3">
+<h3 class="anchored" data-anchor-id="related-courses-to-imrpove-your-understanding">Related Courses to imrpove your understanding:</h3>
+</section>
+<section id="extensions---ideas" class="level3">
+<h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
+<ol type="1">
+<li>Add memory to the bot
+<ul>
+<li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
+</ul></li>
+</ol>
 
-### Problem Statement of the project
-Build a chatbot for a pizzeria for taking orders using Gemini 1.5 Flash model and build GUI using "Panel" library
 
-#### Tasks:
-1. Configuration: import necessary LLM libraries and api key
-2. Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.
-3. Function to receive a list of prompts & pass to LLM & return response - ensure that the chat context is kept.
-4. Build chat interface 
-5. Deploy the locally and in a webserver
-
-More information on each project task can be found in the jupyter notebook [preview](). 
-
-### Code
-Github Repository: [link](https://github.com/aksharasoman/chatbot.git)
-
-### Chatbot - A snapshot
-Here is a video of our orderbot in action: .
-
-I deployed the chatbot using Ploomber, but the [link](https://broken-wildflower-4698.ploomberapp.io/app) may currently be unavailable due to limitations of the free tier.
-
-### Observations
-- Importance of Prompt engineering
-  
-### Challenges 
-
-### How to deploy a Panel based app?
-1. [[Deploy an App built using Panel using Ploomber]]
-2. Another option: [Deploy a Python Visualization Panel App to Google Cloud Run](https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb) - didn’t  do it because of the cost involved. It can be deployed only for a limited duration of time.
-    Pizzabot deployed:[Order bot of Pizza Paradise!](https://broken-wildflower-4698.ploomberapp.io/app)
-
-
-### Related Courses to imrpove your understanding:
-
-### Extensions - Ideas 
-1. Add memory to the bot 
-   - Use case: Save customers orders so that we can retrieve it if the customer asks.
-
--->
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

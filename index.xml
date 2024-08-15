@@ -9,8 +9,90 @@
 <link>https://www.aksharasoman.github.io/</link>
 <atom:link href="https://www.aksharasoman.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
-<generator>quarto-1.5.53</generator>
-<lastBuildDate>Mon, 05 Aug 2024 18:30:00 GMT</lastBuildDate>
+<generator>quarto-1.5.56</generator>
+<lastBuildDate>Wed, 14 Aug 2024 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Order-Bot for a Pizza Restaurant using free Gemini LLM API</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In this project, we implementat of a Chatbot based on Gemini 1.5 Flash LLM to design an orderbot for a pizza restaurant to streamline its customer orders. We used the free version of the Gemini API. A user-friendly GUI is built using opensource python library called Panel.</p>
+<section id="major-implementation-aspects" class="level3">
+<h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
+<section id="llm-api" class="level4">
+<h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
+<p>OpenAI API is no longer available for free. Hence, we opted for the free Gemini LLM API. The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>. <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API quickstart</a> shows you how to get started with the Gemini API using the SDK of your choice. #### Chat GUI The ‘ChatInterface’ component of the <a href="https://panel.holoviz.org/index.html">Panel</a>, an open-source python library is used to build the chatbot GUI.</p>
+</section>
+</section>
+<section id="problem-statement-of-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement-of-the-project">Problem Statement of the project</h3>
+<p>Build a chatbot for a pizzeria for taking orders using Gemini 1.5 Flash model and build GUI using “Panel” library</p>
+<section id="tasks" class="level4">
+<h4 class="anchored" data-anchor-id="tasks">Tasks:</h4>
+<ol type="1">
+<li>Configuration: import necessary LLM libraries and api key</li>
+<li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
+<li>Function to receive a list of prompts &amp; pass to LLM &amp; return response - ensure that the chat context is kept.</li>
+<li>Build chat interface</li>
+<li>Deploy the locally and in a webserver</li>
+</ol>
+<p>More information on each project task can be found in the jupyter notebook <a href="002_chatbot/v2_gemini-pizza-chatbot_chatInterface.ipynb">preview</a>.</p>
+</section>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>Github Repository: <a href="https://github.com/aksharasoman/chatbot.git">link</a></p>
+</section>
+<section id="chatbot---a-snapshot" class="level3">
+<h3 class="anchored" data-anchor-id="chatbot---a-snapshot">Chatbot - A snapshot</h3>
+<p>Here is a video of our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="v2_pizzabot_screenRecording.mov"></video></div>.<p></p>
+<p>I deployed the chatbot using Ploomber, but the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
+</section>
+<section id="observations" class="level3">
+<h3 class="anchored" data-anchor-id="observations">Observations</h3>
+<ul>
+<li>Importance of Prompt engineering</li>
+</ul>
+</section>
+<section id="challenges" class="level3">
+<h3 class="anchored" data-anchor-id="challenges">Challenges</h3>
+</section>
+<section id="how-to-deploy-a-panel-based-app" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</h3>
+<ol type="1">
+<li>Deploy an App built using Panel using Ploomber</li>
+<li>Another option: <a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">Deploy a Python Visualization Panel App to Google Cloud Run</a> - didn’t do it because of the cost involved. It can be deployed only for a limited duration of time. Pizzabot deployed:<a href="https://broken-wildflower-4698.ploomberapp.io/app">Order bot of Pizza Paradise!</a></li>
+</ol>
+</section>
+<section id="related-courses-to-imrpove-your-understanding" class="level3">
+<h3 class="anchored" data-anchor-id="related-courses-to-imrpove-your-understanding">Related Courses to imrpove your understanding:</h3>
+</section>
+<section id="extensions---ideas" class="level3">
+<h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
+<ol type="1">
+<li>Add memory to the bot
+<ul>
+<li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
+</ul></li>
+</ol>
+
+
+</section>
+
+ ]]></description>
+  <category>projectx</category>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/</guid>
+  <pubDate>Wed, 14 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Coding Practice - Solution to Leetcode Problems</title>
   <dc:creator>Akshara Soman</dc:creator>
