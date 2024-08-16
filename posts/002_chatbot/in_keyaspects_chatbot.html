@@ -9,7 +9,7 @@
 <meta name="author" content="Akshara Soman">
 <meta name="dcterms.date" content="2024-08-16">
 
-<title>Master Chatbot Development with DeepLearning.AI Courses – akshara soman</title>
+<title>Key Aspects of Building a Chatbot – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,8 +122,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Master Chatbot Development with DeepLearning.AI Courses</h1>
+      <h1 class="title">Key Aspects of Building a Chatbot</h1>
                                 <div class="quarto-categories">
+                <div class="quarto-category">theory</div>
                 <div class="quarto-category">gen-ai</div>
                 <div class="quarto-category">chatbot</div>
                 <div class="quarto-category">LLM</div>
@@ -171,39 +172,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>A chatbot project can help solidify your understanding of a few key AI concepts– and is fun to build! While there are numerous short courses available that focus on developing and using chatbot interfaces, this list will offer a solid starting point.</p>
+<p>Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production considerations.</p>
+<section id="training" class="level4">
+<h4 class="anchored" data-anchor-id="training">Training</h4>
+<p>Language models (LLMs) undergo two main phases of training:</p>
 <ol type="1">
-<li><a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">ChatGPT Prompt Engineering for Developers</a> : 1 hr
-<ol type="1">
-<li>uses OpenAI API</li>
-<li>best practices of prompt engineering (writing effective prompts)</li>
-<li>show how LLM APIs can be used for a variety of tasks:
-<ul>
-<li>Summarizing (e.g., summarizing user reviews for brevity)</li>
-<li>Inferring (e.g., sentiment classification, topic extraction)</li>
-<li>Transforming text (e.g., translation, spelling &amp; grammar correction)</li>
-<li>Expanding (e.g., automatically writing emails)</li>
-</ul></li>
-<li>Build a custom chatbot (a pizza bot with GUI) ChatGPT Prompt Engineering Course Notes</li>
-</ol></li>
-<li><a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/">LangChain for LLM Application Development - DeepLearning.AI</a> : 1 hr : need to invest time to become adept at the langchain framework!
-<ol type="1">
-<li>to take your chatbot to next level by
-<ol type="1">
-<li>adding memory</li>
-<li>as reasoning agents</li>
-<li>Q&amp;A on proprietary documents</li>
-</ol></li>
-</ol></li>
-<li><a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/">Building Systems with the ChatGPT API - DeepLearning.AI</a> : 1 hr
-<ol type="1">
-<li>Build a A customer service chatbot</li>
-<li>Multistage prompts: to split complex tasks into a pipeline of subtasks</li>
-<li>Evaluate your LLM inputs and outputs for safety, accuracy, and relevance</li>
-</ol></li>
+<li><p><strong>Pre-training</strong>: In this phase, the model learns to predict the next word in a sentence using large-scale datasets. This helps the model acquire general understanding of language.</p></li>
+<li><p><strong>Fine-tuning</strong>: This phase adapts the model to specific tasks. For chat models, the fine-tuning task is typically <strong>Conversational</strong>, where the model learns to engage in dialogues effectively.</p></li>
 </ol>
+</section>
+<section id="memory" class="level4">
+<h4 class="anchored" data-anchor-id="memory">Memory</h4>
+<p>LLMs do not inherently possess memory, meaning they cannot remember previous interactions or conversations. Developers can incorporate memory features to maintain context throughout the interaction.</p>
+<p>For more insights, see the <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/">LangChain course by deeplearning.ai</a>on developing chatbots.</p>
+</section>
+<section id="production" class="level4">
+<h4 class="anchored" data-anchor-id="production">Production</h4>
+<p>When deploying a chatbot to production, it’s essential to ensure that it provides safe and non-toxic responses.</p>
+<p>For more details on setting up effective moderation practices, refer to the ‘Moderation’ chapter in the <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/">Building Systems with ChatGPT</a> course by deeplearning.ai.</p>
+<p><strong>To learn more</strong> You can find more details about the contents of each course here: <a href="chatbot_courses.qmd">Master Chatbot Development with DeepLearning.AI Courses</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
