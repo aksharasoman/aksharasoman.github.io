@@ -157,6 +157,14 @@
 <h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
 <p>Here is a video demonstrating our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div><p></p>
 <p>I deployed the chatbot using Ploomber, however the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
+<section id="cloud-deployment-options---good-resources" class="level4">
+<h4 class="anchored" data-anchor-id="cloud-deployment-options---good-resources">Cloud Deployment Options - Good Resources</h4>
+<ul>
+<li><a href="https://panel.holoviz.org/how_to/deployment/index.html">List from Panel Official Documentation</a></li>
+<li><a href="https://docs.cloud.ploomber.io/en/latest/apps/panel.html">Deploy it using Ploomber</a></li>
+<li><a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">A blog that outlines how to deploy using Google Cloud Run</a></li>
+</ul>
+</section>
 </section>
 <section id="key-takeaways" class="level3">
 <h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
@@ -193,13 +201,6 @@
 <li><a href="../../posts/002_chatbot/in_keyaspects_chatbot.html">Key Aspects of Building a Chatbot</a></li>
 <li><a href="../../posts/002_chatbot/in_chatbot_courses.html">Master Chatbot Development with DeepLearning.AI Courses</a></li>
 </ul>
-<section id="how-to-deploy-a-panel-based-app" class="level4">
-<h4 class="anchored" data-anchor-id="how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</h4>
-<ol type="1">
-<li>Deploy an App built using Panel using Ploomber</li>
-<li>Another option: <a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">Deploy a Python Visualization Panel App to Google Cloud Run</a> - didn’t do it because of the cost involved. It can be deployed only for a limited duration of time. Pizzabot deployed:<a href="https://broken-wildflower-4698.ploomberapp.io/app">Order bot of Pizza Paradise!</a></li>
-</ol>
-</section>
 </section>
 <section id="extensions---ideas" class="level3">
 <h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
@@ -1245,8 +1246,8 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Fri, 16 Aug 2024 08:38:08 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/supportbot.png" medium="image" type="image/png" height="180" width="144"/>
+  <pubDate>Fri, 16 Aug 2024 08:50:24 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
