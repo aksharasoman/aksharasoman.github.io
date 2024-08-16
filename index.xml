@@ -91,7 +91,7 @@
 <h4 class="anchored" data-anchor-id="production">Production</h4>
 <p>When deploying a chatbot to production, it’s essential to ensure that it provides safe and non-toxic responses.</p>
 <p>For more details on setting up effective moderation practices, refer to the ‘Moderation’ chapter in the <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/">Building Systems with ChatGPT</a> course by deeplearning.ai.</p>
-<p><strong>To learn more</strong> You can find more details about the contents of each course here: <a href="chatbot_courses.qmd">Master Chatbot Development with DeepLearning.AI Courses</a>.</p>
+<p><strong>To learn more</strong> You can find more details about the contents of each course here: <a href="../../posts/002_chatbot/in_chatbot_courses.html">Master Chatbot Development with DeepLearning.AI Courses</a>.</p>
 
 
 </section>
@@ -1245,7 +1245,8 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Fri, 16 Aug 2024 08:34:24 GMT</pubDate>
+  <pubDate>Fri, 16 Aug 2024 08:38:08 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/supportbot.png" medium="image" type="image/png" height="180" width="144"/>
 </item>
 </channel>
 </rss>
