@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/coding-practice/questions_list.html",
       "/posts/002_chatbot/chatbot_courses.html",
       "/posts/002_chatbot/keyaspects_chatbot.html",
+      "/posts/coding-practice/questions_list.html",
       "/posts/002_chatbot/index.html",
       "/posts/coding-practice/index.html",
       "/posts/001_gan_project/index.html"

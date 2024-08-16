@@ -105,6 +105,51 @@
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot_benefits.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>List of Coding Questions &amp; Solutions</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="list-of-questions-solutions" class="level1">
+<h1>List of Questions &amp; Solutions</h1>
+<p>A full list of the topics and questions covered in this repo (so far).</p>
+<ol type="1">
+<li>August Week 1 : <strong>Solutions counter - 0/75</strong></li>
+</ol>
+<section id="binary-search" class="level2">
+<h2 class="anchored" data-anchor-id="binary-search"><a href="binary_search">Binary Search</a></h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Leetcode Link</th>
+<th>Solution</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></td>
+<td><a href="binary_search/min_in_rotated_array.py">min_in_rotated_array.py</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>coding</category>
+  <guid>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</guid>
+  <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/coding-practice/images/leetcode.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
+<item>
   <title>Chatbot for a Pizza Restaurant using free Gemini LLM API</title>
   <dc:creator>Akshara Soman</dc:creator>
   <link>https://www.aksharasoman.github.io/posts/002_chatbot/</link>
@@ -416,50 +461,6 @@ Expected learnings
   <guid>https://www.aksharasoman.github.io/posts/001_gan_project/</guid>
   <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/001_gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
-</item>
-<item>
-  <title>List of Coding Questions &amp; Solutions</title>
-  <dc:creator>aksharas </dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="list-of-questions-solutions" class="level1">
-<h1>List of Questions &amp; Solutions</h1>
-<p>A full list of the topics and questions covered in this repo (so far).</p>
-<hr>
-<ol type="1">
-<li>August Week 1 : <strong>Solutions counter - 0/75</strong></li>
-</ol>
-<section id="binary-search" class="level2">
-<h2 class="anchored" data-anchor-id="binary-search"><a href="binary_search">Binary Search</a></h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Leetcode Link</th>
-<th>Solution</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></td>
-<td><a href="binary_search/min_in_rotated_array.py">min_in_rotated_array.py</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</guid>
-  <pubDate>Fri, 16 Aug 2024 07:59:46 GMT</pubDate>
 </item>
 </channel>
 </rss>
