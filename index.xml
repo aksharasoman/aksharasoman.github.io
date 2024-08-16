@@ -418,9 +418,11 @@ Expected learnings
   <media:content url="https://www.aksharasoman.github.io/posts/001_gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
-  <title></title>
+  <title>List of Coding Questions &amp; Solutions</title>
+  <dc:creator>aksharas </dc:creator>
   <link>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -457,7 +459,7 @@ Expected learnings
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</guid>
-  <pubDate>Fri, 16 Aug 2024 07:05:23 GMT</pubDate>
+  <pubDate>Fri, 16 Aug 2024 07:59:46 GMT</pubDate>
 </item>
 </channel>
 </rss>
