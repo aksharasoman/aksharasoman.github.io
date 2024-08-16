@@ -14,7 +14,7 @@
 <item>
   <title>Master Chatbot Development with DeepLearning.AI Courses</title>
   <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/002_chatbot/chatbot_courses.html</link>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/in_chatbot_courses.html</link>
   <description><![CDATA[ 
 
 
@@ -58,96 +58,9 @@
   <category>gen-ai</category>
   <category>chatbot</category>
   <category>LLM</category>
-  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/chatbot_courses.html</guid>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/in_chatbot_courses.html</guid>
   <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/deeplearningai.png" medium="image" type="image/png" height="101" width="144"/>
-</item>
-<item>
-  <title>Key Aspects of Building a Chatbot</title>
-  <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/002_chatbot/keyaspects_chatbot.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production considerations.</p>
-<section id="training" class="level4">
-<h4 class="anchored" data-anchor-id="training">Training</h4>
-<p>Language models (LLMs) undergo two main phases of training:</p>
-<ol type="1">
-<li><p><strong>Pre-training</strong>: In this phase, the model learns to predict the next word in a sentence using large-scale datasets. This helps the model acquire general understanding of language.</p></li>
-<li><p><strong>Fine-tuning</strong>: This phase adapts the model to specific tasks. For chat models, the fine-tuning task is typically <strong>Conversational</strong>, where the model learns to engage in dialogues effectively.</p></li>
-</ol>
-</section>
-<section id="memory" class="level4">
-<h4 class="anchored" data-anchor-id="memory">Memory</h4>
-<p>LLMs do not inherently possess memory, meaning they cannot remember previous interactions or conversations. Developers can incorporate memory features to maintain context throughout the interaction.</p>
-<p>For more insights, see the <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/">LangChain course by deeplearning.ai</a>on developing chatbots.</p>
-</section>
-<section id="production" class="level4">
-<h4 class="anchored" data-anchor-id="production">Production</h4>
-<p>When deploying a chatbot to production, it’s essential to ensure that it provides safe and non-toxic responses.</p>
-<p>For more details on setting up effective moderation practices, refer to the ‘Moderation’ chapter in the <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/">Building Systems with ChatGPT</a> course by deeplearning.ai.</p>
-<p><strong>To learn more</strong> You can find more details about the contents of each course here: <a href="../../posts/002_chatbot/chatbot_courses.html">Master Chatbot Development with DeepLearning.AI Courses</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <category>theory</category>
-  <category>gen-ai</category>
-  <category>chatbot</category>
-  <category>LLM</category>
-  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/keyaspects_chatbot.html</guid>
-  <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot_benefits.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>List of Coding Questions &amp; Solutions</title>
-  <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="list-of-questions-solutions" class="level1">
-<h1>List of Questions &amp; Solutions</h1>
-<p>A full list of the topics and questions covered in this repo (so far).</p>
-<ol type="1">
-<li>August Week 1 : <strong>Solutions counter - 0/75</strong></li>
-</ol>
-<section id="binary-search" class="level2">
-<h2 class="anchored" data-anchor-id="binary-search"><a href="binary_search">Binary Search</a></h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Leetcode Link</th>
-<th>Solution</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array</a></td>
-<td><a href="binary_search/min_in_rotated_array.py">min_in_rotated_array.py</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>coding</category>
-  <guid>https://www.aksharasoman.github.io/posts/coding-practice/questions_list.html</guid>
-  <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/coding-practice/images/leetcode.png" medium="image" type="image/png" height="79" width="144"/>
 </item>
 <item>
   <title>Chatbot for a Pizza Restaurant using free Gemini LLM API</title>
@@ -236,7 +149,7 @@
 <h4 class="anchored" data-anchor-id="key-aspects-of-building-a-chatbot"><a href="../../posts/002_chatbot/keyaspects_chatbot.html">Key Aspects of Building a Chatbot</a></h4>
 </section>
 <section id="master-chatbot-development-with-deeplearning.ai-courses" class="level4">
-<h4 class="anchored" data-anchor-id="master-chatbot-development-with-deeplearning.ai-courses"><a href="../../posts/002_chatbot/chatbot_courses.html">Master Chatbot Development with DeepLearning.AI Courses</a></h4>
+<h4 class="anchored" data-anchor-id="master-chatbot-development-with-deeplearning.ai-courses"><a href="chatbot_courses.qmd">Master Chatbot Development with DeepLearning.AI Courses</a></h4>
 </section>
 <section id="how-to-deploy-a-panel-based-app" class="level4">
 <h4 class="anchored" data-anchor-id="how-to-deploy-a-panel-based-app">How to deploy a Panel based app?</h4>
