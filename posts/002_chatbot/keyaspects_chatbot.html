@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Akshara Soman">
+<meta name="dcterms.date" content="2024-08-16">
 
-<title>akshara soman</title>
+<title>Key Aspects of Building a Chatbot – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +25,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/as3.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/as3.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,68 +71,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="akshara soman" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed">
 
@@ -141,10 +83,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/as3.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/as3.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">akshara soman</span>
     </a>
   </div>
@@ -155,7 +97,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -179,272 +121,81 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">akshara soman</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Key Aspects of Building a Chatbot</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">theory</div>
+                <div class="quarto-category">gen-ai</div>
+                <div class="quarto-category">chatbot</div>
+                <div class="quarto-category">LLM</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Akshara Soman </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 16, 2024</p>
+      </div>
+    </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">August 16, 2024</p>
+      </div>
+    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="GAN">GAN <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLM">LLM <span class="quarto-category-count">(3)</span></div><div class="category" data-category="chatbot">chatbot <span class="quarto-category-count">(3)</span></div><div class="category" data-category="coding">coding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gen-ai">gen-ai <span class="quarto-category-count">(4)</span></div><div class="category" data-category="project">project <span class="quarto-category-count">(2)</span></div><div class="category" data-category="pytorch">pytorch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="theory">theory <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1722922799833" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
-<a href="./posts/coding-practice/questions_list.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-List of Questions &amp; Solutions
-</h5>
-<div class="card-text listing-description">
-A full list of the topics and questions covered in this repo (so far).
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1723739586519" data-listing-reading-time-sort="3" data-listing-word-count-sort="539">
-<a href="./posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jupyter Notebook - Building an Orderbot using Gemini API
-</h5>
-<div class="card-text listing-description">
-The Python SDK for the Gemini API is contained in the google-generativeai package.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="gen-ai,chatbot,LLM" data-listing-date-sort="1723746600000" data-listing-file-modified-sort="1723791198609" data-listing-date-modified-sort="1723791198000" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
-<a href="./posts/002_chatbot/chatbot_courses.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/deeplearningai.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Master Chatbot Development with DeepLearning.AI Courses
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('gen-ai'); return false;">
-gen-ai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('chatbot'); return false;">
-chatbot
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-</div>
-<div class="card-text listing-description">
-
-<li>ChatGPT Prompt Engineering for Developers : 1 hr
+<p>Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production considerations.</p>
+<section id="training" class="level4">
+<h4 class="anchored" data-anchor-id="training">Training</h4>
+<p>Language models (LLMs) undergo two main phases of training:</p>
 <ol type="1">
-<li>uses OpenAI API</li>
-<li>best practices of prompt engineering (writing effective prompts)</li>
-<li>show how LLM APIs can be used for a…<ul><li></li><li></li><li></li><li></li></ul></li><li></li></ol></li><li><ol type="1"><li><ol type="1"><li></li><li></li><li></li></ol></li></ol></li><li><ol type="1"><li></li><li></li><li></li></ol></li>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="theory,gen-ai,chatbot,LLM" data-listing-date-sort="1723746600000" data-listing-file-modified-sort="1723791217248" data-listing-date-modified-sort="1723791217000" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
-<a href="./posts/002_chatbot/keyaspects_chatbot.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/chatbot_benefits.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Key Aspects of Building a Chatbot
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('theory'); return false;">
-theory
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('gen-ai'); return false;">
-gen-ai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('chatbot'); return false;">
-chatbot
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-</div>
-<div class="card-text listing-description">
-Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="project,gen-ai,chatbot,LLM" data-listing-date-sort="1723660200000" data-listing-file-modified-sort="1723791552341" data-listing-date-modified-sort="1723791552000" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
-<a href="./posts/002_chatbot/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/chatbot.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chatbot for a Pizza Restaurant using free Gemini LLM API
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('project'); return false;">
-project
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('gen-ai'); return false;">
-gen-ai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('chatbot'); return false;">
-chatbot
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-</div>
-<div class="card-text listing-description">
-This project focuses on developing an order bot for a pizza restaurant using the <strong>Gemini 1.5 Flash LLM</strong>. Our goal was to create a chatbot that efficiently streamlines customer…<strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 15, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="coding" data-listing-date-sort="1722882600000" data-listing-file-modified-sort="1722923010720" data-listing-date-modified-sort="1722923010000" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
-<a href="./posts/coding-practice/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/coding-practice/images/coding.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coding Practice - Solution to Leetcode Problems
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('coding'); return false;">
-coding
-</div>
-</div>
-<div class="card-text listing-description">
-This is a collection of solutions_(in progress)_ to common Leetcode questions, based on a list compiled by Neetcode.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 6, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="project,gen-ai,GAN,pytorch" data-listing-date-sort="1720722600000" data-listing-file-modified-sort="1723731162134" data-listing-date-modified-sort="1723731162000" data-listing-reading-time-sort="2" data-listing-word-count-sort="343">
-<a href="./posts/001_gan_project/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/001_gan_project/gan_arch.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Generate Handwritten Digits Using GAN
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('project'); return false;">
-project
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('gen-ai'); return false;">
-gen-ai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('GAN'); return false;">
-GAN
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('pytorch'); return false;">
-pytorch
-</div>
-</div>
-<div class="card-text listing-description">
-Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Jul 12, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<li><p><strong>Pre-training</strong>: In this phase, the model learns to predict the next word in a sentence using large-scale datasets. This helps the model acquire general understanding of language.</p></li>
+<li><p><strong>Fine-tuning</strong>: This phase adapts the model to specific tasks. For chat models, the fine-tuning task is typically <strong>Conversational</strong>, where the model learns to engage in dialogues effectively.</p></li>
+</ol>
+</section>
+<section id="memory" class="level4">
+<h4 class="anchored" data-anchor-id="memory">Memory</h4>
+<p>LLMs do not inherently possess memory, meaning they cannot remember previous interactions or conversations. Developers can incorporate memory features to maintain context throughout the interaction.</p>
+<p>For more insights, see the <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/">LangChain course by deeplearning.ai</a>on developing chatbots.</p>
+</section>
+<section id="production" class="level4">
+<h4 class="anchored" data-anchor-id="production">Production</h4>
+<p>When deploying a chatbot to production, it’s essential to ensure that it provides safe and non-toxic responses.</p>
+<p>For more details on setting up effective moderation practices, refer to the ‘Moderation’ chapter in the <a href="https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/">Building Systems with ChatGPT</a> course by deeplearning.ai.</p>
+<p><strong>To learn more</strong> You can find more details about the contents of each course here: <a href="../../posts/002_chatbot/chatbot_courses.html">Master Chatbot Development with DeepLearning.AI Courses</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
