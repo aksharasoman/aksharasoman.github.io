@@ -308,7 +308,7 @@
 <section id="extensions---ideas" class="level3">
 <h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
 <ol type="1">
-<li>Add memory to the bot
+<li><a href="https://aksharasoman.github.io/posts/003_qaDocs/index.html">Add memory to the bot</a>
 <ul>
 <li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
 <li>Edited: You can see my implemention of a chatbot with memory capability <a href="https://aksharasoman.github.io/posts/003_qaDocs/index.html">here</a>.</li>
@@ -1350,7 +1350,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Wed, 13 Nov 2024 07:19:29 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 07:21:11 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
