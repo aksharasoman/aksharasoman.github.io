@@ -44,8 +44,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -205,13 +203,6 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tasks" class="level3">
 <h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
-<ol type="1">
-<li>Configuration: import necessary LLM libraries and <a href="https://aistudio.google.com/app/apikey">api key</a></li>
-<li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
-<li>Developing a Function for Interactions: Create a function that receives prompts, passes them to the LLM, and returns the response while ensuring that the chat context is preserved. This can be achieved using the <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class of the Gemini API.</li>
-<li>Building the GUI: Use the <a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a> component from Panel to build the chatbot’s graphical interface.</li>
-<li>App Deployment: Deploy the application both locally and on a web server.</li>
-</ol>
 <p>More information on each project task can be found in the <a href="v2_gemini-pizza-chatbot_chatInterface.ipynb">jupyter notebook preview</a>.</p>
 </section>
 <section id="code" class="level3">
@@ -220,7 +211,6 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="chatbot-in-action" class="level3">
 <h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
-<p>Here is a video demonstrating our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div><p></p>
 <p>I deployed the chatbot using Ploomber, however the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
 <section id="cloud-deployment-options---good-resources" class="level4">
 <h4 class="anchored" data-anchor-id="cloud-deployment-options---good-resources">Cloud Deployment Options - Good Resources</h4>
@@ -847,7 +837,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

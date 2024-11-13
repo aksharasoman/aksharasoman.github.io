@@ -36,13 +36,6 @@
 </section>
 <section id="tasks" class="level3">
 <h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
-<ol type="1">
-<li>Configuration: import necessary LLM libraries and <a href="https://aistudio.google.com/app/apikey">api key</a></li>
-<li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
-<li>Developing a Function for Interactions: Create a function that receives prompts, passes them to the LLM, and returns the response while ensuring that the chat context is preserved. This can be achieved using the <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class of the Gemini API.</li>
-<li>Building the GUI: Use the <a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a> component from Panel to build the chatbot’s graphical interface.</li>
-<li>App Deployment: Deploy the application both locally and on a web server.</li>
-</ol>
 <p>More information on each project task can be found in the <a href="v2_gemini-pizza-chatbot_chatInterface.ipynb">jupyter notebook preview</a>.</p>
 </section>
 <section id="code" class="level3">
@@ -51,7 +44,6 @@
 </section>
 <section id="chatbot-in-action" class="level3">
 <h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
-<p>Here is a video demonstrating our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div><p></p>
 <p>I deployed the chatbot using Ploomber, however the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
 <section id="cloud-deployment-options---good-resources" class="level4">
 <h4 class="anchored" data-anchor-id="cloud-deployment-options---good-resources">Cloud Deployment Options - Good Resources</h4>
@@ -120,7 +112,7 @@
   <category>LangChain</category>
   <guid>https://www.aksharasoman.github.io/posts/003_qaDocs/</guid>
   <pubDate>Tue, 12 Nov 2024 18:30:00 GMT</pubDate>
-  <media:content url="http://some-site.com/assets/images/image.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.aksharasoman.github.io/posts/003_qaDocs/rag_outline.png" medium="image" type="image/png" height="72" width="144"/>
 </item>
 <item>
   <title>Master Chatbot Development with DeepLearning.AI Courses</title>
@@ -319,6 +311,7 @@
 <li>Add memory to the bot
 <ul>
 <li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
+<li>Edited: You can see my implemention of a chatbot with memory capability <a href="https://aksharasoman.github.io/posts/003_qaDocs/index.html">here</a>.</li>
 </ul></li>
 <li>Create book-suggestion-bot based on reader’s reading history, genres of interest, and current best-sellers.</li>
 </ol>
@@ -1357,7 +1350,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Wed, 13 Nov 2024 06:56:26 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 07:19:29 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
