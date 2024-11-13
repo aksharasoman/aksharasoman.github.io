@@ -226,6 +226,125 @@
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/003_qaDocs/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>This project focuses on developing an order bot for a pizza restaurant using the <strong>Gemini 1.5 Flash LLM</strong>. Our goal was to create a chatbot that efficiently streamlines customer orders through a user-friendly GUI, which we built using the open-source Python library <strong>Panel</strong>. To implement this solution, we utilized the free tier of the Gemini API, ensuring cost-effectiveness while maintaining functionality. <a href="https://en.wikipedia.org/wiki/Elephant"><img src="https://www.aksharasoman.github.io/posts/003_qaDocs/elephant.png" class="img-fluid" alt="Elephant"></a> A chatbot project can help solidify our understanding of a few <a href="in_keyaspects_chatbot.qmd">key Gen-AI concepts</a>– and is fun to build!</p>
+<section id="major-implementation-aspects" class="level3">
+<h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
+<section id="llm-api" class="level4">
+<h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
+<ul>
+<li>The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>.</li>
+<li>To get started with the Gemini API, refer to the <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API Quickstart Guide</a>.</li>
+<li>Gemini’s <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class supports multi-turn, freeform conversations, enabling dynamic interactions with the chatbot.</li>
+</ul>
+</section>
+<section id="chat-gui" class="level4">
+<h4 class="anchored" data-anchor-id="chat-gui">Chat GUI</h4>
+<ul>
+<li>The ‘<a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a>’ component of <a href="https://panel.holoviz.org/index.html">Panel</a> library was used to build the chatbot’s graphical user interface (GUI).</li>
+</ul>
+</section>
+</section>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
+<p>Build a pizzeria chatbot to facilitate order taking using the Gemini 1.5 Flash model and design its GUI with the Panel library.</p>
+</section>
+<section id="tasks" class="level3">
+<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
+<ol type="1">
+<li>Configuration: import necessary LLM libraries and <a href="https://aistudio.google.com/app/apikey">api key</a></li>
+<li>Prompt Engineering: Prepare detailed system instructions to steer the behavior of the LLM model.</li>
+<li>Developing a Function for Interactions: Create a function that receives prompts, passes them to the LLM, and returns the response while ensuring that the chat context is preserved. This can be achieved using the <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class of the Gemini API.</li>
+<li>Building the GUI: Use the <a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a> component from Panel to build the chatbot’s graphical interface.</li>
+<li>App Deployment: Deploy the application both locally and on a web server.</li>
+</ol>
+<p>More information on each project task can be found in the <a href="v2_gemini-pizza-chatbot_chatInterface.ipynb">jupyter notebook preview</a>.</p>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>Github Repository: <a href="https://github.com/aksharasoman/chatbot/blob/e83575d5c1c3d7da3cd2c669fb68f5e1cf65238e/chatgpt-chatbot_dlai.ipynb">link</a></p>
+</section>
+<section id="chatbot-in-action" class="level3">
+<h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
+<p>Here is a video demonstrating our orderbot in action: </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="orderbot_screenrecording.mov"></video></div><p></p>
+<p>I deployed the chatbot using Ploomber, however the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
+<section id="cloud-deployment-options---good-resources" class="level4">
+<h4 class="anchored" data-anchor-id="cloud-deployment-options---good-resources">Cloud Deployment Options - Good Resources</h4>
+<ul>
+<li><a href="https://panel.holoviz.org/how_to/deployment/index.html">List from Panel Official Documentation</a></li>
+<li><a href="https://docs.cloud.ploomber.io/en/latest/apps/panel.html">Deploy it using Ploomber</a></li>
+<li><a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">A blog that outlines how to deploy using Google Cloud Run</a></li>
+</ul>
+</section>
+</section>
+<section id="key-takeaways" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li><p><strong>Importance of Prompt Engineering</strong>: Providing detailed and clear instructions significantly improves the performance of LLM models. For example, explicit instructions helped the Gemini model perform comparably to the OpenAI model by reducing errors in mathematical calculations.</p></li>
+<li><p><strong>Performance Comparison</strong>: A comparison between the paid OpenAI model, “gpt-3.5-turbo” (code available <a href="https://github.com/aksharasoman/chatbot/blob/e83575d5c1c3d7da3cd2c669fb68f5e1cf65238e/chatgpt-chatbot_dlai.ipynb">here</a>), and the free-tier Gemini model, “gemini-1.5-flash,” showed that the OpenAI model generally delivered clearer and more accurate responses. However, the Gemini model’s performance improved with more detailed instructions.</p></li>
+<li><p><strong>Tailor-Made Chat Interfaces:</strong> We used Panel in our project to build a customizable chat interface. Additionally, other packages and libraries, such as Streamlit and Flask, are also available for creating chat interfaces.</p></li>
+<li><p><strong>Deployment Options and Costs</strong>: Different <a href="https://panel.holoviz.org/how_to/deployment/index.html">deployment services</a>, such as Amazon AWS, Google App Engine, Ploomber, and Hugging Face, come with varying costs, which should be considered when choosing a platform.</p></li>
+</ul>
+</section>
+<section id="challenges-encountered" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-encountered">Challenges Encountered</h3>
+<ol type="1">
+<li><p><strong>Cost of OpenAI API</strong>: As the OpenAI API is no longer available for free, we opted for the Gemini LLM API. However, the transition presented its own set of challenges, such as requiring more detailed instructions and inconsistent performance in some tasks.</p></li>
+<li><p><strong>Inconsistent Mathematical Calculations</strong>: When asked to re-check a calculation, the model may produce a different total than previously stated.</p>
+<ul>
+<li><strong>Solution</strong>: To ensure accuracy, explicitly instruct the model to calculate the sum of all ordered items’ prices when computing the customer’s total bill.</li>
+</ul></li>
+<li><p><strong>Need for Extensive Instructions</strong>: The Gemini model required more detailed instructions compared to the OpenAI API. For example:</p>
+<ul>
+<li>Instruct the chatbot to calculate the total bill by summing up the prices of all ordered items.</li>
+<li>Instruct the chatbot not to suggest dishes not listed in the provided menu.</li>
+</ul></li>
+<li><p><strong>Missed Prompts for Toppings</strong>: Despite instructions to always inquire about toppings after a pizza order is placed, the chatbot occasionally fails to do so.</p></li>
+<li><p><strong>Warning Message from Gemini Model</strong>: A warning message appeared when adding a system instruction during model initialization.</p>
+<ul>
+<li><strong>Solution</strong>: The warning was resolved by installing the package grpcio==1.60.1.</li>
+</ul></li>
+</ol>
+</section>
+<section id="additional-information" class="level3">
+<h3 class="anchored" data-anchor-id="additional-information">Additional Information</h3>
+<ul>
+<li><a href="in_keyaspects_chatbot.qmd">Key Aspects of Building a Chatbot</a></li>
+<li><a href="in_chatbot_courses.qmd">Master Chatbot Development with DeepLearning.AI Courses</a></li>
+</ul>
+</section>
+<section id="extensions---ideas" class="level3">
+<h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
+<ol type="1">
+<li>Add memory to the bot
+<ul>
+<li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
+</ul></li>
+<li>Create book-suggestion-bot based on reader’s reading history, genres of interest, and current best-sellers.</li>
+</ol>
+<p>If you have suggestions or ideas to collaborate, please drop an <a href="mailto:aksharasoman@gmail.com">email</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>project</category>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <guid>https://www.aksharasoman.github.io/posts/003_qaDocs/</guid>
+  <pubDate>Wed, 14 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/003_qaDocs/rag_outline.png(https:/en.wikipedia.org/wiki/Elephant)" medium="image"/>
+</item>
+<item>
   <title>Coding Practice - Solution to Leetcode Problems</title>
   <dc:creator>Akshara Soman</dc:creator>
   <link>https://www.aksharasoman.github.io/posts/coding-practice/</link>
@@ -1246,7 +1365,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Sat, 17 Aug 2024 12:59:13 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 06:40:26 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
