@@ -120,6 +120,7 @@
   <category>LangChain</category>
   <guid>https://www.aksharasoman.github.io/posts/003_qaDocs/</guid>
   <pubDate>Tue, 12 Nov 2024 18:30:00 GMT</pubDate>
+  <media:content url="http://some-site.com/assets/images/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Master Chatbot Development with DeepLearning.AI Courses</title>
@@ -1356,7 +1357,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Wed, 13 Nov 2024 06:51:32 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 06:56:26 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
