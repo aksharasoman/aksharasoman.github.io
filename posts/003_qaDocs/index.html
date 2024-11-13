@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Akshara Soman">
-<meta name="dcterms.date" content="2024-08-15">
+<meta name="dcterms.date" content="2024-11-13">
 
 <title>Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph – akshara soman</title>
 <style>
@@ -130,6 +130,7 @@ ul.task-list li input[type="checkbox"] {
                 <div class="quarto-category">gen-ai</div>
                 <div class="quarto-category">chatbot</div>
                 <div class="quarto-category">LLM</div>
+                <div class="quarto-category">LangChain</div>
               </div>
                   </div>
   </div>
@@ -147,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 15, 2024</p>
+        <p class="date">November 13, 2024</p>
       </div>
     </div>
     
@@ -169,8 +170,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#major-implementation-aspects" id="toc-major-implementation-aspects" class="nav-link active" data-scroll-target="#major-implementation-aspects">Major Implementation Aspects</a></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
   <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#tools-and-technologies-used" id="toc-tools-and-technologies-used" class="nav-link" data-scroll-target="#tools-and-technologies-used">Tools and Technologies Used</a></li>
   <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   <li><a href="#chatbot-in-action" id="toc-chatbot-in-action" class="nav-link" data-scroll-target="#chatbot-in-action">Chatbot in Action</a></li>
@@ -188,27 +190,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This project focuses on developing an order bot for a pizza restaurant using the <strong>Gemini 1.5 Flash LLM</strong>. Our goal was to create a chatbot that efficiently streamlines customer orders through a user-friendly GUI, which we built using the open-source Python library <strong>Panel</strong>. To implement this solution, we utilized the free tier of the Gemini API, ensuring cost-effectiveness while maintaining functionality. <a href="https://en.wikipedia.org/wiki/Elephant"><img src="elephant.png" class="img-fluid" alt="Elephant"></a> A chatbot project can help solidify our understanding of a few <a href="in_keyaspects_chatbot.qmd">key Gen-AI concepts</a>– and is fun to build!</p>
-<section id="major-implementation-aspects" class="level3">
-<h3 class="anchored" data-anchor-id="major-implementation-aspects">Major Implementation Aspects</h3>
-<section id="llm-api" class="level4">
-<h4 class="anchored" data-anchor-id="llm-api">LLM API</h4>
-<ul>
-<li>The Gemini API key can be obtained <a href="https://aistudio.google.com/app/apikey">here</a>.</li>
-<li>To get started with the Gemini API, refer to the <a href="https://ai.google.dev/gemini-api/docs/quickstart?lang=python">Gemini API Quickstart Guide</a>.</li>
-<li>Gemini’s <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">ChatSession</a> class supports multi-turn, freeform conversations, enabling dynamic interactions with the chatbot.</li>
-</ul>
-</section>
-<section id="chat-gui" class="level4">
-<h4 class="anchored" data-anchor-id="chat-gui">Chat GUI</h4>
-<ul>
-<li>The ‘<a href="https://panel.holoviz.org/reference/chat/ChatInterface.html">ChatInterface</a>’ component of <a href="https://panel.holoviz.org/index.html">Panel</a> library was used to build the chatbot’s graphical user interface (GUI).</li>
-</ul>
-</section>
+<p>In this project, I explored how memory could be incorporated into a question-answering (QA) system over documents using LangChain and LangGraph, two powerful libraries designed for rapid development of language applications.</p>
+<section id="project-overview" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
+<p>In this article, I’ll walk you through my recent project, which combines Retrieval-Augmented Generation (RAG) pipelines with memory integration. Here, the chatbot not only searches through documents for relevant answers but also retains memory of the ongoing conversation. This is particularly valuable for tasks where users need consistent interactions, such as customer support, educational assistance, or domain-specific inquiries.</p>
 </section>
 <section id="problem-statement" class="level3">
 <h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
-<p>Build a pizzeria chatbot to facilitate order taking using the Gemini 1.5 Flash model and design its GUI with the Panel library.</p>
+<p>Build a chatbot that answers user queries based on an uploaded document, with memory to maintain context across interactions.</p>
+</section>
+<section id="tools-and-technologies-used" class="level3">
+<h3 class="anchored" data-anchor-id="tools-and-technologies-used">Tools and Technologies Used</h3>
+<p><strong>LangChain</strong>: Provides tools for building language model-driven applications, including powerful utilities for working with RAG architectures. <strong>LangGraph</strong>: Complements LangChain by enabling the use of graph databases to store and retrieve contextually relevant data efficiently, optimizing memory integration. <strong>RAG Pipeline</strong>: Combines retrieval and generation capabilities to source information from documents and provide concise, natural language responses.</p>
 </section>
 <section id="tasks" class="level3">
 <h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
