@@ -34,71 +34,56 @@
 <h3 class="anchored" data-anchor-id="tools-and-technologies-used">Tools and Technologies Used</h3>
 <p><strong>LangChain</strong>: Provides tools for building language model-driven applications, including powerful utilities for working with RAG architectures. <strong>LangGraph</strong>: Complements LangChain by enabling the use of graph databases to store and retrieve contextually relevant data efficiently, optimizing memory integration. <strong>RAG Pipeline</strong>: Combines retrieval and generation capabilities to source information from documents and provide concise, natural language responses.</p>
 </section>
-<section id="tasks" class="level3">
-<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
-<p>More information on each project task can be found in the <a href="v2_gemini-pizza-chatbot_chatInterface.ipynb">jupyter notebook preview</a>.</p>
+<section id="the-architecture-rag-pipeline-with-memory" class="level3">
+<h3 class="anchored" data-anchor-id="the-architecture-rag-pipeline-with-memory">The Architecture: RAG Pipeline with Memory</h3>
+<p>A Retrieval-Augmented Generation (RAG) pipeline generally consists of two key components:</p>
+<p>Retriever: Searches for relevant information within documents. Generator: Generates a coherent response based on the retrieved information. In this project, I took a step further by incorporating memory into the RAG pipeline, enabling the chatbot to “remember” past queries and responses within a session. This feature enhances response relevance and continuity in multi-turn conversations, where understanding previous interactions is essential.</p>
+</section>
+<section id="implementation-details" class="level3">
+<h3 class="anchored" data-anchor-id="implementation-details">Implementation Details</h3>
+<section id="step-1-setting-up-the-rag-pipeline" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-setting-up-the-rag-pipeline">Step 1: Setting Up the RAG pipeline</h4>
+<p>&lt;&lt; add rag diagram and explanation &gt;&gt; &lt;&lt; add langchain code snippet overview : obs &gt;&gt;</p>
+</section>
+<section id="step-2-integrating-memory-with-langgraph" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-integrating-memory-with-langgraph">Step 2: Integrating Memory with LangGraph</h4>
+<p>Memory integration is where LangGraph shines. By storing conversation history within a graph database, LangGraph allows the bot to access past interactions and improve its contextual understanding in real-time.</p>
+<p>&lt;&lt; add langgraph details/diagram from obs &gt;&gt;</p>
+</section>
 </section>
 <section id="code" class="level3">
 <h3 class="anchored" data-anchor-id="code">Code</h3>
 <p>Github Repository: <a href="https://github.com/aksharasoman/chatbot/blob/e83575d5c1c3d7da3cd2c669fb68f5e1cf65238e/chatgpt-chatbot_dlai.ipynb">link</a></p>
+<p>Direct link to the notebook: &lt;&lt; add if needed &gt;&gt; &lt;&lt; add descp on all imp files if needed &gt;&gt;</p>
 </section>
 <section id="chatbot-in-action" class="level3">
 <h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
-<p>I deployed the chatbot using Ploomber, however the <a href="https://broken-wildflower-4698.ploomberapp.io/app">link</a> may currently be unavailable due to limitations of the free tier.</p>
-<section id="cloud-deployment-options---good-resources" class="level4">
-<h4 class="anchored" data-anchor-id="cloud-deployment-options---good-resources">Cloud Deployment Options - Good Resources</h4>
+<p>&lt;&lt; add screenshot &gt;&gt;</p>
+</section>
+<section id="advantages-of-memory-enhanced-qa" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-memory-enhanced-qa">Advantages of Memory-Enhanced QA</h3>
+<p>Incorporating memory into the RAG pipeline has several benefits:</p>
 <ul>
-<li><a href="https://panel.holoviz.org/how_to/deployment/index.html">List from Panel Official Documentation</a></li>
-<li><a href="https://docs.cloud.ploomber.io/en/latest/apps/panel.html">Deploy it using Ploomber</a></li>
-<li><a href="https://towardsdatascience.com/deploy-a-python-visualization-panel-app-to-google-cloud-ii-416e487b44eb">A blog that outlines how to deploy using Google Cloud Run</a></li>
+<li>Improved User Experience: Users experience a natural flow of conversation without needing to rephrase or reintroduce context.</li>
+<li>Enhanced Response Accuracy: Memory allows the bot to build on prior responses, making it ideal for complex query chains.</li>
+<li>Use of Proprietary Databases: RAG over documents enables the chatbot to retrieve answers from proprietary databases without requiring additional training on the data, making it adaptable for secure, domain-specific applications.</li>
 </ul>
 </section>
+<section id="challenges-and-future-improvements" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-and-future-improvements">Challenges and Future Improvements</h3>
+<p>One key challenge in implementing memory-enhanced QA systems is selecting the optimal components—such as the language model (LLM), embedding techniques, and vector database. Each choice impacts the system’s performance, efficiency, and cost. For instance, different LLMs may vary in response quality, while embedding methods and vector databases can influence retrieval speed and accuracy. Moving forward, evaluating and contrasting these components in various contexts could help fine-tune the pipeline for specific requirements.</p>
 </section>
-<section id="key-takeaways" class="level3">
-<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
-<ul>
-<li><p><strong>Importance of Prompt Engineering</strong>: Providing detailed and clear instructions significantly improves the performance of LLM models. For example, explicit instructions helped the Gemini model perform comparably to the OpenAI model by reducing errors in mathematical calculations.</p></li>
-<li><p><strong>Performance Comparison</strong>: A comparison between the paid OpenAI model, “gpt-3.5-turbo” (code available <a href="https://github.com/aksharasoman/chatbot/blob/e83575d5c1c3d7da3cd2c669fb68f5e1cf65238e/chatgpt-chatbot_dlai.ipynb">here</a>), and the free-tier Gemini model, “gemini-1.5-flash,” showed that the OpenAI model generally delivered clearer and more accurate responses. However, the Gemini model’s performance improved with more detailed instructions.</p></li>
-<li><p><strong>Tailor-Made Chat Interfaces:</strong> We used Panel in our project to build a customizable chat interface. Additionally, other packages and libraries, such as Streamlit and Flask, are also available for creating chat interfaces.</p></li>
-<li><p><strong>Deployment Options and Costs</strong>: Different <a href="https://panel.holoviz.org/how_to/deployment/index.html">deployment services</a>, such as Amazon AWS, Google App Engine, Ploomber, and Hugging Face, come with varying costs, which should be considered when choosing a platform.</p></li>
-</ul>
-</section>
-<section id="challenges-encountered" class="level3">
-<h3 class="anchored" data-anchor-id="challenges-encountered">Challenges Encountered</h3>
+<section id="possible-extensions---ideas" class="level3">
+<h3 class="anchored" data-anchor-id="possible-extensions---ideas">Possible Extensions - Ideas</h3>
 <ol type="1">
-<li><p><strong>Cost of OpenAI API</strong>: As the OpenAI API is no longer available for free, we opted for the Gemini LLM API. However, the transition presented its own set of challenges, such as requiring more detailed instructions and inconsistent performance in some tasks.</p></li>
-<li><p><strong>Inconsistent Mathematical Calculations</strong>: When asked to re-check a calculation, the model may produce a different total than previously stated.</p>
-<ul>
-<li><strong>Solution</strong>: To ensure accuracy, explicitly instruct the model to calculate the sum of all ordered items’ prices when computing the customer’s total bill.</li>
-</ul></li>
-<li><p><strong>Need for Extensive Instructions</strong>: The Gemini model required more detailed instructions compared to the OpenAI API. For example:</p>
-<ul>
-<li>Instruct the chatbot to calculate the total bill by summing up the prices of all ordered items.</li>
-<li>Instruct the chatbot not to suggest dishes not listed in the provided menu.</li>
-</ul></li>
-<li><p><strong>Missed Prompts for Toppings</strong>: Despite instructions to always inquire about toppings after a pizza order is placed, the chatbot occasionally fails to do so.</p></li>
-<li><p><strong>Warning Message from Gemini Model</strong>: A warning message appeared when adding a system instruction during model initialization.</p>
-<ul>
-<li><strong>Solution</strong>: The warning was resolved by installing the package grpcio==1.60.1.</li>
-</ul></li>
+<li>Compare performance of different language models, embedding techniques, and vector databases for memory-enhanced QA systems across various application contexts.</li>
 </ol>
 </section>
-<section id="additional-information" class="level3">
-<h3 class="anchored" data-anchor-id="additional-information">Additional Information</h3>
+<section id="credits" class="level3">
+<h3 class="anchored" data-anchor-id="credits">Credits</h3>
 <ul>
-<li><a href="in_keyaspects_chatbot.qmd">Key Aspects of Building a Chatbot</a></li>
-<li><a href="in_chatbot_courses.qmd">Master Chatbot Development with DeepLearning.AI Courses</a></li>
+<li>Thumbnail credit: <a href="https://www.ml6.eu/blogpost/leveraging-llms-on-your-domain-specific-knowledge-base">Leveraging LLMs on your domain-specific knowledge base</a></li>
 </ul>
-</section>
-<section id="extensions---ideas" class="level3">
-<h3 class="anchored" data-anchor-id="extensions---ideas">Extensions - Ideas</h3>
-<ol type="1">
-<li>Add memory to the bot
-<ul>
-<li>Use case: Save customers orders so that we can retrieve it if the customer asks.</li>
-</ul></li>
-<li>Create book-suggestion-bot based on reader’s reading history, genres of interest, and current best-sellers.</li>
-</ol>
 <p>If you have suggestions or ideas to collaborate, please drop an <a href="mailto:aksharasoman@gmail.com">email</a>.</p>
 
 
@@ -1350,7 +1335,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Wed, 13 Nov 2024 07:21:11 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 09:21:04 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
