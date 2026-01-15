@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.aksharasoman.github.io/publications.html</loc>
-    <lastmod>2026-01-15T12:11:50.946Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/about.html</loc>
+    <lastmod>2026-01-15T11:41:35.919Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/ml-notes/optimization.html</loc>
-    <lastmod>2026-01-15T16:25:14.884Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/ml-notes/ml_basics.html</loc>
+    <lastmod>2026-01-15T16:25:07.362Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/ml-notes/cnn_cv.html</loc>
-    <lastmod>2026-01-15T16:56:31.241Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/ml-notes/index.html</loc>
+    <lastmod>2026-01-15T17:09:32.200Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/index.html</loc>
-    <lastmod>2026-01-15T11:41:35.920Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/ml-notes/attention.html</loc>
+    <lastmod>2026-01-15T17:09:16.157Z</lastmod>
   </url>
   <url>
     <loc>https://www.aksharasoman.github.io/posts/002_chatbot/in_keyaspects_chatbot.html</loc>
@@ -45,19 +45,19 @@
     <lastmod>2026-01-15T11:41:36.020Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/ml-notes/attention.html</loc>
-    <lastmod>2026-01-15T17:01:17.522Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/index.html</loc>
+    <lastmod>2026-01-15T11:41:35.920Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/ml-notes/index.html</loc>
-    <lastmod>2026-01-15T16:47:45.725Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/ml-notes/cnn_cv.html</loc>
+    <lastmod>2026-01-15T16:56:31.241Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/ml-notes/ml_basics.html</loc>
-    <lastmod>2026-01-15T16:25:07.362Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/ml-notes/optimization.html</loc>
+    <lastmod>2026-01-15T16:25:14.884Z</lastmod>
   </url>
   <url>
-    <loc>https://www.aksharasoman.github.io/about.html</loc>
-    <lastmod>2026-01-15T11:41:35.919Z</lastmod>
+    <loc>https://www.aksharasoman.github.io/publications.html</loc>
+    <lastmod>2026-01-15T12:11:50.946Z</lastmod>
   </url>
 </urlset>

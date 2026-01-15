@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/ml-qa.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html",
