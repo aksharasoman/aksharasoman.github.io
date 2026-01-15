@@ -320,12 +320,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
 function expandAll() {
-  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = true);
+  document.querySelectorAll("details.qa").forEach(d => d.open = true);
 }
 function collapseAll() {
-  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = false);
+  document.querySelectorAll("details.qa").forEach(d => d.open = false);
 }
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
