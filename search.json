@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Jupyter Notebook - Building an Orderbot using Gemini API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocument-Based Question Answering Chatbot with Memory Using LangChain and LangGraph\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\nLangChain\n\n\n\n\n\n\n\nAkshara Soman\n\n\nNov 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Chatbot Development with DeepLearning.AI Courses\n\n\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Aspects of Building a Chatbot\n\n\n\ntheory\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot for a Pizza Restaurant using free Gemini LLM API\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoding Practice - Solution to Leetcode Problems\n\n\n\ncoding\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerate Handwritten Digits Using GAN\n\n\n\nproject\n\ngen-ai\n\nGAN\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Jupyter Notebook - Building an Orderbot using Gemini API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocument-Based Question Answering Chatbot with Memory Using LangChain and LangGraph\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\nLangChain\n\n\n\n\n\n\n\nAkshara Soman\n\n\nNov 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Chatbot Development with DeepLearning.AI Courses\n\n\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Aspects of Building a Chatbot\n\n\n\ntheory\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot for a Pizza Restaurant using free Gemini LLM API\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerate Handwritten Digits Using GAN\n\n\n\nproject\n\ngen-ai\n\nGAN\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html",
@@ -26,27 +26,6 @@
     "title": "Master Chatbot Development with DeepLearning.AI Courses",
     "section": "",
     "text": "A chatbot project can help solidify your understanding of a few key AI concepts– and is fun to build! While there are numerous short courses available that focus on developing and using chatbot interfaces, this list will offer a solid starting point.\n\nChatGPT Prompt Engineering for Developers : 1 hr\n\nuses OpenAI API\nbest practices of prompt engineering (writing effective prompts)\nshow how LLM APIs can be used for a variety of tasks:\n\nSummarizing (e.g., summarizing user reviews for brevity)\nInferring (e.g., sentiment classification, topic extraction)\nTransforming text (e.g., translation, spelling & grammar correction)\nExpanding (e.g., automatically writing emails)\n\nBuild a custom chatbot (a pizza bot with GUI) ChatGPT Prompt Engineering Course Notes\n\nLangChain for LLM Application Development - DeepLearning.AI : 1 hr : need to invest time to become adept at the langchain framework!\n\nto take your chatbot to next level by\n\nadding memory\nas reasoning agents\nQ&A on proprietary documents\n\n\nBuilding Systems with the ChatGPT API - DeepLearning.AI : 1 hr\n\nBuild a A customer service chatbot\nMultistage prompts: to split complex tasks into a pipeline of subtasks\nEvaluate your LLM inputs and outputs for safety, accuracy, and relevance"
-  },
-  {
-    "objectID": "posts/coding-practice/index.html",
-    "href": "posts/coding-practice/index.html",
-    "title": "Coding Practice - Solution to Leetcode Problems",
-    "section": "",
-    "text": "This is a collection of solutions_(in progress)_ to common Leetcode questions, based on a list compiled by Neetcode.\nThe solutions are in Python3. Required explanations are provided as comments within the script file. If more detailed explanations are necessary, they will be included in an accompanying markdown file.\n\nYou can find the list of questions that are covered in this repo here\n\nI recommend the following line-of-action if you are attempting a problem for the FIRST time:\n\n\n\nneetcode-sop\n\n\n\n\nIf you face any issues or have any suggestions, please feel free to open an issue in the github repo. I will try to get back to you as soon as possible.\n\n\n\nIf you want to contact me, you can reach me via email or visit my website."
-  },
-  {
-    "objectID": "posts/coding-practice/index.html#issues",
-    "href": "posts/coding-practice/index.html#issues",
-    "title": "Coding Practice - Solution to Leetcode Problems",
-    "section": "",
-    "text": "If you face any issues or have any suggestions, please feel free to open an issue in the github repo. I will try to get back to you as soon as possible."
-  },
-  {
-    "objectID": "posts/coding-practice/index.html#more-questions",
-    "href": "posts/coding-practice/index.html#more-questions",
-    "title": "Coding Practice - Solution to Leetcode Problems",
-    "section": "",
-    "text": "If you want to contact me, you can reach me via email or visit my website."
   },
   {
     "objectID": "posts/001_gan_project/index.html",
