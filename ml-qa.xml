@@ -10,7 +10,7 @@
 <atom:link href="https://www.aksharasoman.github.io/ml-qa.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 15 Jan 2026 16:44:01 GMT</lastBuildDate>
+<lastBuildDate>Thu, 15 Jan 2026 16:48:05 GMT</lastBuildDate>
 <item>
   <title>Attention &amp; Transformers — Interview Q&amp;A</title>
   <link>https://www.aksharasoman.github.io/ml-qa/attention.html</link>
@@ -58,7 +58,7 @@ Multi-head attention learns different relationships simultaneously.
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/attention.html</guid>
-  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:48:05 GMT</pubDate>
 </item>
 <item>
   <title>Attention &amp; Transformers — Interview Q&amp;A</title>
@@ -77,7 +77,6 @@ Expand All
 <button onclick="collapseAll()">
 Collapse All
 </button>
-<hr>
 </section>
 <section id="self-attention" class="level2">
 <h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
@@ -106,7 +105,7 @@ function collapseAll() {
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/cnn_cv.html</guid>
-  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:48:05 GMT</pubDate>
 </item>
 <item>
   <title>ML — Rolling Notes</title>
@@ -119,8 +118,7 @@ function collapseAll() {
 
 <section id="topics" class="level2">
 <h2 class="anchored" data-anchor-id="topics">📚 Topics</h2>
-<p>Use these notes for quick revision and interview preparation.<br>
-Click on a topic to access expandable Q&amp;A.</p>
+<p>Each topic contains <strong>click-to-expand questions</strong>, optimized for quick revision.</p>
 <ul>
 <li><a href="../ml-qa/attention.html">Attention &amp; Transformers</a></li>
 <li><a href="../ml-qa/optimization.html">Optimization &amp; Training</a></li>
@@ -134,7 +132,7 @@ Click on a topic to access expandable Q&amp;A.</p>
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/</guid>
-  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:48:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
