@@ -14,7 +14,7 @@
 <item>
   <title>Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph</title>
   <dc:creator>Akshara Soman</dc:creator>
-  <link>https://www.aksharasoman.github.io/posts/003_qaDocs/</link>
+  <link>https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/</link>
   <description><![CDATA[ 
 
 
@@ -96,9 +96,9 @@
   <category>chatbot</category>
   <category>LLM</category>
   <category>LangChain</category>
-  <guid>https://www.aksharasoman.github.io/posts/003_qaDocs/</guid>
+  <guid>https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/</guid>
   <pubDate>Tue, 12 Nov 2024 18:30:00 GMT</pubDate>
-  <media:content url="https://www.aksharasoman.github.io/posts/003_qaDocs/rag_outline.png" medium="image" type="image/png" height="72" width="144"/>
+  <media:content url="https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/rag_outline.png" medium="image" type="image/png" height="72" width="144"/>
 </item>
 <item>
   <title>Master Chatbot Development with DeepLearning.AI Courses</title>
@@ -1339,7 +1339,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Thu, 15 Jan 2026 12:10:36 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 12:13:36 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>

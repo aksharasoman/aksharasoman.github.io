@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Akshara Soman">
+<meta name="dcterms.date" content="2024-11-13">
 
-<title>Blog – akshara soman</title>
+<title>Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,31 +25,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/as3.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-5100b8561cd7f6cd8c35657ed6fe7ee7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/as3.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-5100b8561cd7f6cd8c35657ed6fe7ee7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,68 +75,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="akshara soman" href="index.xml" data-external="1"></head>
+<link rel="stylesheet" href="../../styles.css">
+</head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -307,11 +249,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/as3.png" alt="" class="navbar-logo light-content">
-    <img src="./images/as3.png" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/as3.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/as3.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">akshara soman</span>
     </a>
   </div>
@@ -322,15 +264,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -354,268 +296,144 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">project</div>
+                <div class="quarto-category">gen-ai</div>
+                <div class="quarto-category">chatbot</div>
+                <div class="quarto-category">LLM</div>
+                <div class="quarto-category">LangChain</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Akshara Soman </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 13, 2024</p>
+      </div>
+    </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">January 15, 2026</p>
+      </div>
+    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Y2hhdGJvdA==">chatbot <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Y29kaW5n">coding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R0FO">GAN <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VuLWFp">gen-ai <span class="quarto-category-count">(5)</span></div><div class="category" data-category="TGFuZ0NoYWlu">LangChain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(4)</span></div><div class="category" data-category="cHJvamVjdA==">project <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cHl0b3JjaA==">pytorch <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGhlb3J5">theory <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#tools-and-technologies-used" id="toc-tools-and-technologies-used" class="nav-link" data-scroll-target="#tools-and-technologies-used">Tools and Technologies Used</a></li>
+  <li><a href="#the-architecture-rag-pipeline-with-memory" id="toc-the-architecture-rag-pipeline-with-memory" class="nav-link" data-scroll-target="#the-architecture-rag-pipeline-with-memory">The Architecture: RAG Pipeline with Memory</a></li>
+  <li><a href="#implementation-details" id="toc-implementation-details" class="nav-link" data-scroll-target="#implementation-details">Implementation Details</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#chatbot-in-action" id="toc-chatbot-in-action" class="nav-link" data-scroll-target="#chatbot-in-action">Chatbot in Action</a></li>
+  <li><a href="#advantages-of-memory-enhanced-qa" id="toc-advantages-of-memory-enhanced-qa" class="nav-link" data-scroll-target="#advantages-of-memory-enhanced-qa">Advantages of Memory-Enhanced QA</a></li>
+  <li><a href="#challenges-and-future-improvements" id="toc-challenges-and-future-improvements" class="nav-link" data-scroll-target="#challenges-and-future-improvements">Challenges and Future Improvements</a></li>
+  <li><a href="#possible-extensions---ideas" id="toc-possible-extensions---ideas" class="nav-link" data-scroll-target="#possible-extensions---ideas">Possible Extensions - Ideas</a></li>
+  <li><a href="#credits" id="toc-credits" class="nav-link" data-scroll-target="#credits">Credits</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
 
+<p>In this project, I explored how memory could be incorporated into a question-answering (QA) system over documents using LangChain and LangGraph, two powerful libraries designed for rapid development of language applications.</p>
+<section id="project-overview" class="level3">
+<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
+<p>In this article, I’ll walk you through my recent project, which combines Retrieval-Augmented Generation (RAG) pipelines with memory integration. Here, the chatbot not only searches through documents for relevant answers but also retains memory of the ongoing conversation. This is particularly valuable for tasks where users need consistent interactions, such as customer support, educational assistance, or domain-specific inquiries.</p>
+</section>
+<section id="problem-statement" class="level3">
+<h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
+<p>Build a chatbot that answers user queries based on an uploaded document, with memory to maintain context across interactions.</p>
+</section>
+<section id="tools-and-technologies-used" class="level3">
+<h3 class="anchored" data-anchor-id="tools-and-technologies-used">Tools and Technologies Used</h3>
+<p><strong>LangChain</strong>: Provides tools for building language model-driven applications, including powerful utilities for working with RAG architectures. <strong>LangGraph</strong>: Complements LangChain by enabling the use of graph databases to store and retrieve contextually relevant data efficiently, optimizing memory integration. <strong>RAG Pipeline</strong>: Combines retrieval and generation capabilities to source information from documents and provide concise, natural language responses.</p>
+</section>
+<section id="the-architecture-rag-pipeline-with-memory" class="level3">
+<h3 class="anchored" data-anchor-id="the-architecture-rag-pipeline-with-memory">The Architecture: RAG Pipeline with Memory</h3>
+<p>A Retrieval-Augmented Generation (RAG) pipeline generally consists of two key components:</p>
+<p>Retriever: Searches for relevant information within documents. Generator: Generates a coherent response based on the retrieved information. In this project, I took a step further by incorporating memory into the RAG pipeline, enabling the chatbot to “remember” past queries and responses within a session. This feature enhances response relevance and continuity in multi-turn conversations, where understanding previous interactions is essential.</p>
+</section>
+<section id="implementation-details" class="level3">
+<h3 class="anchored" data-anchor-id="implementation-details">Implementation Details</h3>
+<section id="step-1-setting-up-the-rag-pipeline" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-setting-up-the-rag-pipeline">Step 1: Setting Up the RAG pipeline</h4>
+<p>&lt;&lt; add rag diagram and explanation &gt;&gt; &lt;&lt; add langchain code snippet overview : obs &gt;&gt;</p>
+</section>
+<section id="step-2-integrating-memory-with-langgraph" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-integrating-memory-with-langgraph">Step 2: Integrating Memory with LangGraph</h4>
+<p>Memory integration is where LangGraph shines. By storing conversation history within a graph database, LangGraph allows the bot to access past interactions and improve its contextual understanding in real-time.</p>
+<p>&lt;&lt; add langgraph details/diagram from obs &gt;&gt;</p>
+</section>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>Github Repository: <a href="https://github.com/aksharasoman/chatbot/blob/e83575d5c1c3d7da3cd2c669fb68f5e1cf65238e/chatgpt-chatbot_dlai.ipynb">link</a></p>
+<p>Direct link to the notebook: &lt;&lt; add if needed &gt;&gt; &lt;&lt; add descp on all imp files if needed &gt;&gt;</p>
+</section>
+<section id="chatbot-in-action" class="level3">
+<h3 class="anchored" data-anchor-id="chatbot-in-action">Chatbot in Action</h3>
+<p>&lt;&lt; add screenshot &gt;&gt;</p>
+</section>
+<section id="advantages-of-memory-enhanced-qa" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-of-memory-enhanced-qa">Advantages of Memory-Enhanced QA</h3>
+<p>Incorporating memory into the RAG pipeline has several benefits:</p>
+<ul>
+<li>Improved User Experience: Users experience a natural flow of conversation without needing to rephrase or reintroduce context.</li>
+<li>Enhanced Response Accuracy: Memory allows the bot to build on prior responses, making it ideal for complex query chains.</li>
+<li>Use of Proprietary Databases: RAG over documents enables the chatbot to retrieve answers from proprietary databases without requiring additional training on the data, making it adaptable for secure, domain-specific applications.</li>
+</ul>
+</section>
+<section id="challenges-and-future-improvements" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-and-future-improvements">Challenges and Future Improvements</h3>
+<p>One key challenge in implementing memory-enhanced QA systems is selecting the optimal components—such as the language model (LLM), embedding techniques, and vector database. Each choice impacts the system’s performance, efficiency, and cost. For instance, different LLMs may vary in response quality, while embedding methods and vector databases can influence retrieval speed and accuracy. Moving forward, evaluating and contrasting these components in various contexts could help fine-tune the pipeline for specific requirements.</p>
+</section>
+<section id="possible-extensions---ideas" class="level3">
+<h3 class="anchored" data-anchor-id="possible-extensions---ideas">Possible Extensions - Ideas</h3>
+<ol type="1">
+<li>Compare performance of different language models, embedding techniques, and vector databases for memory-enhanced QA systems across various application contexts.</li>
+</ol>
+</section>
+<section id="credits" class="level3">
+<h3 class="anchored" data-anchor-id="credits">Credits</h3>
+<ul>
+<li>Thumbnail credit: <a href="https://www.ml6.eu/blogpost/leveraging-llms-on-your-domain-specific-knowledge-base">Leveraging LLMs on your domain-specific knowledge base</a></li>
+</ul>
+<p>If you have suggestions or ideas to collaborate, please drop an <a href="mailto:aksharasoman@gmail.com">email</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1768477296020" data-listing-reading-time-sort="3" data-listing-word-count-sort="539">
-<a href="./posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/chatbot.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jupyter Notebook - Building an Orderbot using Gemini API
-</h5>
-<div class="card-text listing-description delink">
-The Python SDK for the Gemini API is contained in the google-generativeai package.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cHJvamVjdCUyQ2dlbi1haSUyQ2NoYXRib3QlMkNMTE0lMkNMYW5nQ2hhaW4=" data-listing-date-sort="1731436200000" data-listing-file-modified-sort="1768479173389" data-listing-date-modified-sort="1768479173000" data-listing-reading-time-sort="3" data-listing-word-count-sort="533">
-<a href="./posts/003_qaDocs_langchain/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/003_qaDocs_langchain/rag_outline.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">project</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VuLWFp'); return false;">gen-ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y2hhdGJvdA=='); return false;">chatbot</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZ0NoYWlu'); return false;">LangChain</div>
-
-</div>
-<div class="card-text listing-description delink">
-In this project, I explored how memory could be incorporated into a question-answering (QA) system over documents using LangChain and LangGraph, two powerful libraries…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Nov 13, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Z2VuLWFpJTJDY2hhdGJvdCUyQ0xMTQ==" data-listing-date-sort="1723746600000" data-listing-file-modified-sort="1768477295962" data-listing-date-modified-sort="1768477295000" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
-<a href="./posts/002_chatbot/in_chatbot_courses.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/deeplearningai.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Master Chatbot Development with DeepLearning.AI Courses
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VuLWFp'); return false;">gen-ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y2hhdGJvdA=='); return false;">chatbot</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
-</div>
-<div class="card-text listing-description delink">
-A chatbot project can help solidify your understanding of a few key AI concepts– and is fun to build! While there are numerous short courses available that focus on…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="dGhlb3J5JTJDZ2VuLWFpJTJDY2hhdGJvdCUyQ0xMTQ==" data-listing-date-sort="1723746600000" data-listing-file-modified-sort="1768477295963" data-listing-date-modified-sort="1768477295000" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
-<a href="./posts/002_chatbot/in_keyaspects_chatbot.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/chatbot_benefits.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Key Aspects of Building a Chatbot
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGhlb3J5'); return false;">theory</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VuLWFp'); return false;">gen-ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y2hhdGJvdA=='); return false;">chatbot</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
-</div>
-<div class="card-text listing-description delink">
-Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cHJvamVjdCUyQ2dlbi1haSUyQ2NoYXRib3QlMkNMTE0=" data-listing-date-sort="1723660200000" data-listing-file-modified-sort="1768477295964" data-listing-date-modified-sort="1768477295000" data-listing-reading-time-sort="4" data-listing-word-count-sort="771">
-<a href="./posts/002_chatbot/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/002_chatbot/chatbot.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Chatbot for a Pizza Restaurant using free Gemini LLM API
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">project</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VuLWFp'); return false;">gen-ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y2hhdGJvdA=='); return false;">chatbot</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
-
-</div>
-<div class="card-text listing-description delink">
-This project focuses on developing an order bot for a pizza restaurant using the <strong>Gemini 1.5 Flash LLM</strong>. Our goal was to create a chatbot that efficiently streamlines customer…<strong></strong>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 15, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Y29kaW5n" data-listing-date-sort="1722882600000" data-listing-file-modified-sort="1768477296036" data-listing-date-modified-sort="1768477296000" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
-<a href="./posts/coding-practice/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/coding-practice/images/coding.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coding Practice - Solution to Leetcode Problems
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaW5n'); return false;">coding</div>
-
-</div>
-<div class="card-text listing-description delink">
-This is a collection of solutions_(in progress)_ to common Leetcode questions, based on a list compiled by Neetcode.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Aug 6, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="cHJvamVjdCUyQ2dlbi1haSUyQ0dBTiUyQ3B5dG9yY2g=" data-listing-date-sort="1720722600000" data-listing-file-modified-sort="1768477295956" data-listing-date-modified-sort="1768477295000" data-listing-reading-time-sort="2" data-listing-word-count-sort="343">
-<a href="./posts/001_gan_project/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/001_gan_project/gan_arch.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Generate Handwritten Digits Using GAN
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdA=='); return false;">project</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VuLWFp'); return false;">gen-ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0FO'); return false;">GAN</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHl0b3JjaA=='); return false;">pytorch</div>
-
-</div>
-<div class="card-text listing-description delink">
-Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Akshara Soman
-</div>
-<div class="listing-date">
-Jul 12, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
