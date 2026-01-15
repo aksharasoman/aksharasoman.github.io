@@ -11,28 +11,28 @@
     "href": "ml-notes/ml_basics.html",
     "title": "akshara soman",
     "section": "",
-    "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line answer:\n{{ONE_LINE}}\nCommon trap:\n{{TRAP}}"
+    "text": "Expand All\n  Collapse All\n\n\n\n\n\n\n\n\n\n{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line answer:\n{{ONE_LINE}}\nCommon trap:\n{{TRAP}}"
   },
   {
     "objectID": "ml-notes/index.html",
     "href": "ml-notes/index.html",
     "title": "ML — Rolling Notes",
     "section": "",
-    "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: {{&lt; page.modified &gt;}}"
+    "text": "Expand All\n  Collapse All"
   },
   {
     "objectID": "ml-notes/index.html#topics",
     "href": "ml-notes/index.html#topics",
     "title": "ML — Rolling Notes",
-    "section": "",
-    "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: {{&lt; page.modified &gt;}}"
+    "section": "📚 Topics",
+    "text": "📚 Topics\nEach topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: January 15, 2026"
   },
   {
     "objectID": "ml-notes/attention.html",
     "href": "ml-notes/attention.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
-    "text": "Expand All"
+    "text": "Expand All\n  Collapse All"
   },
   {
     "objectID": "ml-notes/attention.html#self-attention",
@@ -102,7 +102,7 @@
     "href": "ml-notes/cnn_cv.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
-    "text": "Expand All"
+    "text": "Expand All\n  Collapse All"
   },
   {
     "objectID": "ml-notes/cnn_cv.html#self-attention",
@@ -116,7 +116,7 @@
     "href": "ml-notes/optimization.html",
     "title": "akshara soman",
     "section": "",
-    "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line:\n{{ONE_LINE}}"
+    "text": "Expand All\n  Collapse All\n\n\n\n\n\n\n\n\n\n{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line:\n{{ONE_LINE}}"
   },
   {
     "objectID": "publications.html",

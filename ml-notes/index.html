@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-15">
 
 <title>ML — Rolling Notes – akshara soman</title>
 <style>
@@ -304,6 +305,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<div id="ml-notes-controls" style="margin-bottom: 1rem;">
+  <button onclick="expandAll()">Expand All</button>
+  <button onclick="collapseAll()">Collapse All</button>
+</div>
+
+<script>
+  // Hide controls on index page
+  if (window.location.pathname.endsWith("/ml-notes/") ||
+      window.location.pathname.endsWith("/ml-notes/index.html")) {
+    const controls = document.getElementById("ml-notes-controls");
+    if (controls) controls.style.display = "none";
+  }
+</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -315,6 +329,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 15, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -333,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="../ml-notes/cnn_cv.html">CNNs &amp; Computer Vision</a></li>
 <li><a href="../ml-notes/ml_basics.html">ML Basics</a></li>
 </ul>
-<p><em>Last updated: {{&lt; page.modified &gt;}}</em></p>
+<p><em>Last updated: January 15, 2026</em></p>
 
 
 </section>

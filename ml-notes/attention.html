@@ -313,6 +313,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<div id="ml-notes-controls" style="margin-bottom: 1rem;">
+  <button onclick="expandAll()">Expand All</button>
+  <button onclick="collapseAll()">Collapse All</button>
+</div>
+
+<script>
+  // Hide controls on index page
+  if (window.location.pathname.endsWith("/ml-notes/") ||
+      window.location.pathname.endsWith("/ml-notes/index.html")) {
+    const controls = document.getElementById("ml-notes-controls");
+    if (controls) controls.style.display = "none";
+  }
+</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -333,12 +346,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<button onclick="expandAll()">
-Expand All
-</button>
-<button onclick="collapseAll()">
-Collapse All
-</button>
 <section id="self-attention" class="level2">
 <h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
 <details class="qa">
