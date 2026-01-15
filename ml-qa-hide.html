@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications – akshara soman</title>
+<title>ML Interview Q&amp;A — Rolling Notes – akshara soman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -266,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -274,7 +274,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ml-qa-hide.html"> 
+    <a class="nav-link active" href="./ml-qa-hide.html" aria-current="page"> 
 <span class="menu-text">ML Interview Q&amp;A — Rolling Notes</span></a>
   </li>  
   <li class="nav-item compact">
@@ -299,14 +299,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#topic-1-attention-transformers" id="toc-topic-1-attention-transformers" class="nav-link active" data-scroll-target="#topic-1-attention-transformers">Topic 1: Attention &amp; Transformers</a></li>
+  <li><a href="#topic-2-optimization" id="toc-topic-2-optimization" class="nav-link" data-scroll-target="#topic-2-optimization">Topic 2: Optimization</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
+<h1 class="title">ML Interview Q&amp;A — Rolling Notes</h1>
 </div>
 
 
@@ -323,15 +332,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ul>
-<li><p>A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, <a href="pdfs/aksharaSoman_BPEX_jan2019.pdf">An EEG Study On The Brain Representations in Language Learning</a>, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).</p></li>
-<li><p>K. Praveen, A. Gupta, A. Soman and S. Ganapathy, <a href="pdfs/asru2019.pdf">Second Language Transfer Learning in Humans and Machines Using Image Supervision</a>, IEEE ASRU, Dec.&nbsp;2019.</p></li>
-<li><p>V. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, <a href="pdfs/isca2020.pdf">Audiovisual Correspondence Learning in Humans And Machines</a>, Interspeech 2020, Beijing, October 2020.</p></li>
-<li><p>A. Soman, P. Ramachandran, and S. Ganapathy, <a href="https://www.frontiersin.org/article/10.3389/fnins.2022.763324">ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension</a>, Frontiers in Neuroscience, 2022. <!-- * <a href="https://github.com/iiscleap/Semantics-EEG-ERPStudy"><font color="blue">[Data]</font></a></li></p> --></p></li>
-<li><p>A. Soman, V. Sinha, and S. Ganapathy, <a href="https://www.isca-archive.org/interspeech_2023/soman23_interspeech.pdf">Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries</a>. Proc. INTERSPEECH 2023.</p></li>
-</ul>
+<section id="topic-1-attention-transformers" class="level2">
+<h2 class="anchored" data-anchor-id="topic-1-attention-transformers">Topic 1: Attention &amp; Transformers</h2>
+<details>
+<summary>
+<strong>Q1. What is self-attention?</strong>
+</summary>
+<p>Self-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.</p>
+<p><strong>One-line answer:</strong><br>
+Self-attention lets each token dynamically focus on other tokens to model global context.</p>
+<strong>Common trap:</strong><br>
+Confusing self-attention with cross-attention.
+</details>
+<details>
+<summary>
+<strong>Q2. Why is scaling used in dot-product attention?</strong>
+</summary>
+<p>Scaling by √dₖ prevents large dot-product values from pushing softmax into saturation, which stabilizes gradients during training.</p>
+<strong>One-line answer:</strong><br>
+Scaling avoids softmax saturation and stabilizes training.
+</details>
+<hr>
+</section>
+<section id="topic-2-optimization" class="level2">
+<h2 class="anchored" data-anchor-id="topic-2-optimization">Topic 2: Optimization</h2>
+<details>
+<summary>
+<strong>Q1. Difference between SGD and Adam?</strong>
+</summary>
+<p>SGD uses a single learning rate, while Adam adapts learning rates per parameter using moment estimates of gradients.</p>
+<strong>Common trap:</strong><br>
+Saying Adam always generalizes better.
+</details>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

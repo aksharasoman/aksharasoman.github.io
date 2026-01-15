@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "I am an AI Developer Relations Engineer at Sieve, a Y Combinator-backed startup based in San Francisco. Sieve offers API tools for video AI, including a platform for deploying models, a Python library with ready-to-use AI models, and applications built for different use cases.\nI hold a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I conducted research at the LEAP lab under Prof. Sriram Ganapathy. Previously, I worked as a research engineer in Image Processing at Tata Research Development and Design Center (TRDDC), Pune.\nMy academic background includes an MTech in System Science and Automation (now ‘Artificial Intelligence’) from IISc and a BTech in Electronics and Communication from the College of Engineering, Trivandrum (CET)."
+    "text": "A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, An EEG Study On The Brain Representations in Language Learning, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).\nK. Praveen, A. Gupta, A. Soman and S. Ganapathy, Second Language Transfer Learning in Humans and Machines Using Image Supervision, IEEE ASRU, Dec. 2019.\nV. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, Audiovisual Correspondence Learning in Humans And Machines, Interspeech 2020, Beijing, October 2020.\nA. Soman, P. Ramachandran, and S. Ganapathy, ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension, Frontiers in Neuroscience, 2022. \nA. Soman, V. Sinha, and S. Ganapathy, Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries. Proc. INTERSPEECH 2023."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Blog",
+    "objectID": "ml-qa-hide.html",
+    "href": "ml-qa-hide.html",
+    "title": "ML Interview Q&A — Rolling Notes",
     "section": "",
-    "text": "Jupyter Notebook - Building an Orderbot using Gemini API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocument-Based Question Answering Chatbot with Memory Using LangChain and LangGraph\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\nLangChain\n\n\n\n\n\n\n\nAkshara Soman\n\n\nNov 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Chatbot Development with DeepLearning.AI Courses\n\n\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Aspects of Building a Chatbot\n\n\n\ntheory\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot for a Pizza Restaurant using free Gemini LLM API\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerate Handwritten Digits Using GAN\n\n\n\nproject\n\ngen-ai\n\nGAN\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Q1. What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line answer:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nCommon trap:\nConfusing self-attention with cross-attention.\n\n\n\nQ2. Why is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing softmax into saturation, which stabilizes gradients during training.\nOne-line answer:\nScaling avoids softmax saturation and stabilizes training."
+  },
+  {
+    "objectID": "ml-qa-hide.html#topic-1-attention-transformers",
+    "href": "ml-qa-hide.html#topic-1-attention-transformers",
+    "title": "ML Interview Q&A — Rolling Notes",
+    "section": "",
+    "text": "Q1. What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line answer:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nCommon trap:\nConfusing self-attention with cross-attention.\n\n\n\nQ2. Why is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing softmax into saturation, which stabilizes gradients during training.\nOne-line answer:\nScaling avoids softmax saturation and stabilizes training."
+  },
+  {
+    "objectID": "ml-qa-hide.html#topic-2-optimization",
+    "href": "ml-qa-hide.html#topic-2-optimization",
+    "title": "ML Interview Q&A — Rolling Notes",
+    "section": "Topic 2: Optimization",
+    "text": "Topic 2: Optimization\n\n\nQ1. Difference between SGD and Adam?\n\nSGD uses a single learning rate, while Adam adapts learning rates per parameter using moment estimates of gradients.\nCommon trap:\nSaying Adam always generalizes better."
   },
   {
     "objectID": "posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html",
@@ -70,10 +84,17 @@
     "text": "Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production considerations.\n\nTraining\nLanguage models (LLMs) undergo two main phases of training:\n\nPre-training: In this phase, the model learns to predict the next word in a sentence using large-scale datasets. This helps the model acquire general understanding of language.\nFine-tuning: This phase adapts the model to specific tasks. For chat models, the fine-tuning task is typically Conversational, where the model learns to engage in dialogues effectively.\n\n\n\nMemory\nLLMs do not inherently possess memory, meaning they cannot remember previous interactions or conversations. Developers can incorporate memory features to maintain context throughout the interaction.\nFor more insights, see the LangChain course by deeplearning.aion developing chatbots.\n\n\nProduction\nWhen deploying a chatbot to production, it’s essential to ensure that it provides safe and non-toxic responses.\nFor more details on setting up effective moderation practices, refer to the ‘Moderation’ chapter in the Building Systems with ChatGPT course by deeplearning.ai.\nTo learn more You can find more details about the contents of each course here: Master Chatbot Development with DeepLearning.AI Courses."
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
     "section": "",
-    "text": "A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, An EEG Study On The Brain Representations in Language Learning, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).\nK. Praveen, A. Gupta, A. Soman and S. Ganapathy, Second Language Transfer Learning in Humans and Machines Using Image Supervision, IEEE ASRU, Dec. 2019.\nV. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, Audiovisual Correspondence Learning in Humans And Machines, Interspeech 2020, Beijing, October 2020.\nA. Soman, P. Ramachandran, and S. Ganapathy, ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension, Frontiers in Neuroscience, 2022. \nA. Soman, V. Sinha, and S. Ganapathy, Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries. Proc. INTERSPEECH 2023."
+    "text": "Jupyter Notebook - Building an Orderbot using Gemini API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocument-Based Question Answering Chatbot with Memory Using LangChain and LangGraph\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\nLangChain\n\n\n\n\n\n\n\nAkshara Soman\n\n\nNov 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Chatbot Development with DeepLearning.AI Courses\n\n\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Aspects of Building a Chatbot\n\n\n\ntheory\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot for a Pizza Restaurant using free Gemini LLM API\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerate Handwritten Digits Using GAN\n\n\n\nproject\n\ngen-ai\n\nGAN\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an AI Developer Relations Engineer at Sieve, a Y Combinator-backed startup based in San Francisco. Sieve offers API tools for video AI, including a platform for deploying models, a Python library with ready-to-use AI models, and applications built for different use cases.\nI hold a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I conducted research at the LEAP lab under Prof. Sriram Ganapathy. Previously, I worked as a research engineer in Image Processing at Tata Research Development and Design Center (TRDDC), Pune.\nMy academic background includes an MTech in System Science and Automation (now ‘Artificial Intelligence’) from IISc and a BTech in Electronics and Communication from the College of Engineering, Trivandrum (CET)."
   }
 ]
