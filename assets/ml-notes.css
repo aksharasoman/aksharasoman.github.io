@@ -1,6 +1,6 @@
 /* Spacing between Q&A blocks */
 details.qa {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Improve summary readability */
@@ -18,3 +18,13 @@ details.qa summary:hover {
 button {
   margin-right: 0.5rem;
 }
+
+#ml-notes-controls button {
+  margin-right: 0.5rem;
+}
+
+#ml-notes-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
