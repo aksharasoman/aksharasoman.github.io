@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>akshara soman</title>
+<link>https://www.aksharasoman.github.io/ml-qa.html</link>
+<atom:link href="https://www.aksharasoman.github.io/ml-qa.xml" rel="self" type="application/rss+xml"/>
+<description>A machine learning blog</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Thu, 15 Jan 2026 16:28:41 GMT</lastBuildDate>
+<item>
+  <title>Attention &amp; Transformers — Interview Q&amp;A</title>
+  <link>https://www.aksharasoman.github.io/ml-qa/attention.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="self-attention" class="level2">
+<h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
+<details>
+<summary>
+<strong>What is self-attention?</strong>
+</summary>
+<p>Self-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.</p>
+<p><strong>One-line answer:</strong><br>
+Self-attention lets each token dynamically focus on other tokens to model global context.</p>
+<strong>Common trap:</strong><br>
+Confusing self-attention with cross-attention.
+</details>
+<details>
+<summary>
+<strong>Why is scaling used in dot-product attention?</strong>
+</summary>
+<p>Scaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.</p>
+<strong>One-line answer:</strong><br>
+Scaling avoids softmax saturation and stabilizes training.
+</details>
+<hr>
+</section>
+<section id="multi-head-attention" class="level2">
+<h2 class="anchored" data-anchor-id="multi-head-attention">Multi-Head Attention</h2>
+<details>
+<summary>
+<strong>Why use multiple attention heads?</strong>
+</summary>
+<p>Multiple heads allow the model to attend to different representation subspaces and capture diverse relationships in parallel.</p>
+<strong>One-line answer:</strong><br>
+Multi-head attention learns different relationships simultaneously.
+</details>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.aksharasoman.github.io/ml-qa/attention.html</guid>
+  <pubDate>Thu, 15 Jan 2026 16:28:41 GMT</pubDate>
+</item>
+<item>
+  <title>ML — Rolling Notes</title>
+  <link>https://www.aksharasoman.github.io/ml-qa/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">📚 Topics</h2>
+<p>Use these notes for quick revision and interview preparation.<br>
+Click on a topic to access expandable Q&amp;A.</p>
+<ul>
+<li><a href="../ml-qa/attention.html">Attention &amp; Transformers</a></li>
+<li><a href="../ml-qa/optimization.html">Optimization &amp; Training</a></li>
+<li><a href="../ml-qa/cnn_cv.html">CNNs &amp; Computer Vision</a></li>
+<li><a href="../ml-qa/ml_basics.html">ML Basics</a></li>
+</ul>
+<p><em>Last updated: <strong>?meta:date</strong></em></p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.aksharasoman.github.io/ml-qa/</guid>
+  <pubDate>Thu, 15 Jan 2026 16:28:41 GMT</pubDate>
+</item>
+</channel>
+</rss>

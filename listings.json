@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/ml-qa.html",
+    "items": [
+      "/ml-qa/attention.html",
+      "/ml-qa/cnn_cv.html",
+      "/ml-qa/index.html",
+      "/ml-qa/ml_basics.html",
+      "/ml-qa/optimization.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html",
