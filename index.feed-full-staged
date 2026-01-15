@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>akshara soman</title>
+<link>https://www.aksharasoman.github.io/</link>
+<atom:link href="https://www.aksharasoman.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>A machine learning blog</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Tue, 12 Nov 2024 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/003_qaDocs_langchain/index.html}</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/</link>
+  <description>{B4F502887207:/posts/003_qaDocs_langchain/index.html}</description>
+  <category>project</category>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <category>LangChain</category>
+  <guid>https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/</guid>
+  <pubDate>Tue, 12 Nov 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/003_qaDocs_langchain/rag_outline.png" medium="image" type="image/png" height="72" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/002_chatbot/in_chatbot_courses.html}</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/in_chatbot_courses.html</link>
+  <description>{B4F502887207:/posts/002_chatbot/in_chatbot_courses.html}</description>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/in_chatbot_courses.html</guid>
+  <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/deeplearningai.png" medium="image" type="image/png" height="101" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/002_chatbot/in_keyaspects_chatbot.html}</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/in_keyaspects_chatbot.html</link>
+  <description>{B4F502887207:/posts/002_chatbot/in_keyaspects_chatbot.html}</description>
+  <category>theory</category>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/in_keyaspects_chatbot.html</guid>
+  <pubDate>Thu, 15 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot_benefits.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/002_chatbot/index.html}</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/</link>
+  <description>{B4F502887207:/posts/002_chatbot/index.html}</description>
+  <category>project</category>
+  <category>gen-ai</category>
+  <category>chatbot</category>
+  <category>LLM</category>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/</guid>
+  <pubDate>Wed, 14 Aug 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/001_gan_project/index.html}</title>
+  <dc:creator>Akshara Soman</dc:creator>
+  <link>https://www.aksharasoman.github.io/posts/001_gan_project/</link>
+  <description>{B4F502887207:/posts/001_gan_project/index.html}</description>
+  <category>project</category>
+  <category>gen-ai</category>
+  <category>GAN</category>
+  <category>pytorch</category>
+  <guid>https://www.aksharasoman.github.io/posts/001_gan_project/</guid>
+  <pubDate>Thu, 11 Jul 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/001_gan_project/gan_arch.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html}</title>
+  <link>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</link>
+  <description>{B4F502887207:/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html}</description>
+  <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
+  <pubDate>Thu, 15 Jan 2026 17:22:57 GMT</pubDate>
+  <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
