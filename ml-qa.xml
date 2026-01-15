@@ -10,7 +10,7 @@
 <atom:link href="https://www.aksharasoman.github.io/ml-qa.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 15 Jan 2026 16:36:11 GMT</lastBuildDate>
+<lastBuildDate>Thu, 15 Jan 2026 16:36:39 GMT</lastBuildDate>
 <item>
   <title>Attention &amp; Transformers — Interview Q&amp;A</title>
   <link>https://www.aksharasoman.github.io/ml-qa/attention.html</link>
@@ -58,7 +58,7 @@ Multi-head attention learns different relationships simultaneously.
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/attention.html</guid>
-  <pubDate>Thu, 15 Jan 2026 16:36:11 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:36:39 GMT</pubDate>
 </item>
 <item>
   <title>ML — Rolling Notes</title>
@@ -86,7 +86,7 @@ Click on a topic to access expandable Q&amp;A.</p>
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/</guid>
-  <pubDate>Thu, 15 Jan 2026 16:36:11 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:36:39 GMT</pubDate>
 </item>
 </channel>
 </rss>
