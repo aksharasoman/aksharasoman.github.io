@@ -25,7 +25,7 @@
     "href": "ml-qa-hide.html#topic-2-optimization",
     "title": "ML Interview Q&A — Rolling Notes",
     "section": "Topic 2: Optimization",
-    "text": "Topic 2: Optimization\n\n\nQ1. Difference between SGD and Adam?\n\nSGD uses a single learning rate, while Adam adapts learning rates per parameter using moment estimates of gradients.\nCommon trap:\nSaying Adam always generalizes better."
+    "text": "Topic 2: Optimization\n\n\nQ1. Difference between SGD and Adam?\n\nSGD uses a single learning rate, while Adam adapts learning rates per parameter using moment estimates of gradients.\nCommon trap:\nSaying Adam always generalizes better.\n\n\n\n\nQ. What is batch normalization?\n\n\nBatch normalization normalizes activations across a mini-batch to stabilize training.\n\nWhy it helps:\nReduces internal covariate shift and allows higher learning rates."
   },
   {
     "objectID": "posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html",
