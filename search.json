@@ -1,31 +1,31 @@
 [
   {
-    "objectID": "ml-qa/optimization.html",
-    "href": "ml-qa/optimization.html",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, An EEG Study On The Brain Representations in Language Learning, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).\nK. Praveen, A. Gupta, A. Soman and S. Ganapathy, Second Language Transfer Learning in Humans and Machines Using Image Supervision, IEEE ASRU, Dec. 2019.\nV. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, Audiovisual Correspondence Learning in Humans And Machines, Interspeech 2020, Beijing, October 2020.\nA. Soman, P. Ramachandran, and S. Ganapathy, ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension, Frontiers in Neuroscience, 2022. \nA. Soman, V. Sinha, and S. Ganapathy, Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries. Proc. INTERSPEECH 2023."
+  },
+  {
+    "objectID": "ml-notes/optimization.html",
+    "href": "ml-notes/optimization.html",
     "title": "akshara soman",
     "section": "",
     "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line:\n{{ONE_LINE}}"
   },
   {
-    "objectID": "ml-qa/cnn_cv.html",
-    "href": "ml-qa/cnn_cv.html",
+    "objectID": "ml-notes/cnn_cv.html",
+    "href": "ml-notes/cnn_cv.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
     "text": "Expand All"
   },
   {
-    "objectID": "ml-qa/cnn_cv.html#self-attention",
-    "href": "ml-qa/cnn_cv.html#self-attention",
+    "objectID": "ml-notes/cnn_cv.html#self-attention",
+    "href": "ml-notes/cnn_cv.html#self-attention",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "Self-Attention",
     "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I am an AI Developer Relations Engineer at Sieve, a Y Combinator-backed startup based in San Francisco. Sieve offers API tools for video AI, including a platform for deploying models, a Python library with ready-to-use AI models, and applications built for different use cases.\nI hold a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I conducted research at the LEAP lab under Prof. Sriram Ganapathy. Previously, I worked as a research engineer in Image Processing at Tata Research Development and Design Center (TRDDC), Pune.\nMy academic background includes an MTech in System Science and Automation (now ‘Artificial Intelligence’) from IISc and a BTech in Electronics and Communication from the College of Engineering, Trivandrum (CET)."
   },
   {
     "objectID": "index.html",
@@ -91,52 +91,52 @@
     "text": "Building a Chatbot using Gemini API\n\nTask 0: Configure API key\nThe Python SDK for the Gemini API is contained in the google-generativeai package.\nInstall dependency using: pip install -q -U google-generativeai\nDo not check an API key into your version control system.\n\n\nTask 1: Initialize the model\n\nimport google.generativeai as genai\n\nwith open('gemini_api_key.txt','r') as file: # rename file to 'llm_api_key.txt'\n    API_KEY = file.read()\ngenai.configure(api_key=API_KEY)\n\nUse system instructions to steer the behavior of the model\n\n# Using a context manager to open the file\nwith open('pizzabot_system_instruction.txt', 'r') as file:\n    sys_instr = file.read()\n\n\nmodel=genai.GenerativeModel(\n  model_name=\"gemini-1.5-flash\",\n  system_instruction=sys_instr)\n\n##### 2.1 Initialize the chat\nchat = model.start_chat(history=[])\n\n\n\nTask 2: Receive Prompts and Save Context and Generate chat responses\nChatSession class of gemini enables us to have freeform conversation over multiple turns. We dont have to store conversation history as a list.\nExample: Build an interactive chat\nThe ChatSession.send_message method returns the same GenerateContentResponse type as GenerativeModel.generate_content. It also appends your message and the response to the chat history\n\nimport panel as pn\ndef run_chat(value,user,instance):\n    response = chat.send_message(value)\n    # return f\"{response.text}\"\n    return pn.chat.ChatMessage(response.text, user=\"Pizza Bot\", avatar=\"🐼\")\n\n\n\nTask 3: Build GUI\nHelp: doc\n\npn.extension(\"perspective\")#initialization\n\nchat_bot = pn.chat.ChatInterface(help_text=\"Welcome to Pizza Paradise! What would like to order?\",callback=run_chat,\n                                 max_height=500,max_width=500,show_rerun=False,show_clear=False,\n                                 )\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\nChallenges with Gemini model\n\nMaking mistakes in mathematical calculations. When we ask it to re-check the calculation, it may give you a different total than the one it said earlier. –&gt; What helped: While calculating the total bill of the customer, calculate the sum of price of all items ordered by the customer.\nCompared to openai api, I had to add more instructions for the chatbot to make it perform satisfactorily. Eg:\n\nWhile calculating the total bill of the customer, calculate the sum of price of all items ordered by the customer.\nPlease do not suggest dishes not in the menu mentioned below.\n\nThe instructions specify that the chatbot should always ask for toppings after a pizza order is placed. However, chatbot has missed it in some instances.\n\n\n\nTask 4: Serving the Notebook\nWe’ll organize our components in a nicely styled template (MaterialTemplate) and mark it .servable() to add it to our served app\n\npn.template.MaterialTemplate(\n    site=\"Panel\",\n    title=\"Order bot of Pizza Paradise!\",\n    main=[chat_bot],\n).servable(); # The ; is needed in the notebook to not display the template. Its not needed in a script\n\nDeploy the app locally:\nRun in terminal:\npanel serve v2_gemini-pizza-chatbot_chatInterface.ipynb --autoreload\n\n\nDeploy in Cloud:\n\nHow can I deploy my app and embed it in my website? : DONE\n\nUse: https://docs.cloud.ploomber.io/en/latest/apps/panel.html\n\n\n\n\nAppendix: System instructions to the model\nYou are OrderBot, an automated service to collect orders for a pizza restaurant. You first greet the customer, then collects the order, and then asks if it’s a pickup or delivery. You wait to collect the entire order, then summarize it and check for a final time if the customer wants to add anything else. If it’s a delivery, you ask for an address and contact number. When you give the final order summary, calculate the total price incurred by the customer based on the price tag in the menu. While calculating the total bill of the customer, calculate the sum of price of all items ordered by the customer. If the customer asks for any clarifications on the bill total, re-do the calculation and say the result. Finally you collect the payment. Make sure to clarify all options, extras and sizes to uniquely identify the item from the menu. If they choose a pizza, make sure to ask about Toppings. Please do not suggest dishes not in the menu mentioned below. You respond in a short, very conversational friendly style. The menu includes pepperoni pizza 12.95, 10.00, 7.00 cheese pizza 10.95, 9.25, 6.50 eggplant pizza 11.95, 9.75, 6.75 fries 4.50, 3.50 greek salad 7.25 Toppings: extra cheese 2.00, mushrooms 1.50 sausage 3.00 canadian bacon 3.50 AI sauce 1.50 peppers 1.00 Drinks: coke 3.00, 2.00, 1.00 sprite 3.00, 2.00, 1.00 bottled water 5.00"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, An EEG Study On The Brain Representations in Language Learning, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).\nK. Praveen, A. Gupta, A. Soman and S. Ganapathy, Second Language Transfer Learning in Humans and Machines Using Image Supervision, IEEE ASRU, Dec. 2019.\nV. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, Audiovisual Correspondence Learning in Humans And Machines, Interspeech 2020, Beijing, October 2020.\nA. Soman, P. Ramachandran, and S. Ganapathy, ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension, Frontiers in Neuroscience, 2022. \nA. Soman, V. Sinha, and S. Ganapathy, Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries. Proc. INTERSPEECH 2023."
-  },
-  {
-    "objectID": "ml-qa/attention.html",
-    "href": "ml-qa/attention.html",
+    "objectID": "ml-notes/attention.html",
+    "href": "ml-notes/attention.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
     "text": "Expand All"
   },
   {
-    "objectID": "ml-qa/attention.html#self-attention",
-    "href": "ml-qa/attention.html#self-attention",
+    "objectID": "ml-notes/attention.html#self-attention",
+    "href": "ml-notes/attention.html#self-attention",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "Self-Attention",
     "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention.\n\n\n\nWhy is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.\nOne-line:\nScaling avoids softmax saturation and stabilizes training."
   },
   {
-    "objectID": "ml-qa/attention.html#multi-head-attention",
-    "href": "ml-qa/attention.html#multi-head-attention",
+    "objectID": "ml-notes/attention.html#multi-head-attention",
+    "href": "ml-notes/attention.html#multi-head-attention",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "Multi-Head Attention",
     "text": "Multi-Head Attention\n\n\nWhy use multiple attention heads?\n\nMultiple heads allow the model to attend to different representation subspaces and capture diverse relationships in parallel.\nOne-line:\nMulti-head attention learns different relationships simultaneously."
   },
   {
-    "objectID": "ml-qa/index.html",
-    "href": "ml-qa/index.html",
+    "objectID": "ml-notes/index.html",
+    "href": "ml-notes/index.html",
     "title": "ML — Rolling Notes",
     "section": "",
     "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: ?meta:date"
   },
   {
-    "objectID": "ml-qa/index.html#topics",
-    "href": "ml-qa/index.html#topics",
+    "objectID": "ml-notes/index.html#topics",
+    "href": "ml-notes/index.html#topics",
     "title": "ML — Rolling Notes",
     "section": "",
     "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: ?meta:date"
   },
   {
-    "objectID": "ml-qa/ml_basics.html",
-    "href": "ml-qa/ml_basics.html",
+    "objectID": "ml-notes/ml_basics.html",
+    "href": "ml-notes/ml_basics.html",
     "title": "akshara soman",
     "section": "",
     "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line answer:\n{{ONE_LINE}}\nCommon trap:\n{{TRAP}}"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an AI Developer Relations Engineer at Sieve, a Y Combinator-backed startup based in San Francisco. Sieve offers API tools for video AI, including a platform for deploying models, a Python library with ready-to-use AI models, and applications built for different use cases.\nI hold a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I conducted research at the LEAP lab under Prof. Sriram Ganapathy. Previously, I worked as a research engineer in Image Processing at Tata Research Development and Design Center (TRDDC), Pune.\nMy academic background includes an MTech in System Science and Automation (now ‘Artificial Intelligence’) from IISc and a BTech in Electronics and Communication from the College of Engineering, Trivandrum (CET)."
   }
 ]

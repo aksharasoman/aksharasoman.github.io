@@ -1,13 +1,7 @@
 [
   {
     "listing": "/ml-qa.html",
-    "items": [
-      "/ml-qa/attention.html",
-      "/ml-qa/cnn_cv.html",
-      "/ml-qa/index.html",
-      "/ml-qa/ml_basics.html",
-      "/ml-qa/optimization.html"
-    ]
+    "items": []
   },
   {
     "listing": "/index.html",
