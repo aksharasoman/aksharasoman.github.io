@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-15">
 
 <title>ML — Rolling Notes – akshara soman</title>
 <style>
@@ -316,12 +315,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 15, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -340,46 +333,13 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="../ml-notes/cnn_cv.html">CNNs &amp; Computer Vision</a></li>
 <li><a href="../ml-notes/ml_basics.html">ML Basics</a></li>
 </ul>
-<p><em>Last updated: January 15, 2026</em></p>
+<p><em>Last updated: <strong>?meta:date</strong></em></p>
 
 
 </section>
 
 </main> <!-- /main -->
-document.addEventListener("DOMContentLoaded", function () {
-
-  // Do not add controls on index page
-  const path = window.location.pathname;
-  if (path.endsWith("/ml-notes/") || path.endsWith("/ml-notes/index.html")) {
-    return;
-  }
-
-  // Find the page title (first h1)
-  const title = document.querySelector("main h1");
-  if (!title) return;
-
-  // Create controls container
-  const controls = document.createElement("div");
-  controls.id = "ml-notes-controls";
-  controls.style.margin = "0.5rem 0 1rem 0";
-
-  controls.innerHTML = `
-    <button onclick="expandAll()">Expand All</button>
-    <button onclick="collapseAll()">Collapse All</button>
-  `;
-
-  // Insert controls right after the title
-  title.insertAdjacentElement("afterend", controls);
-});
-
-function expandAll() {
-  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = true);
-}
-
-function collapseAll() {
-  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = false);
-}
-
+<script src="../assets/ml-notes.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
