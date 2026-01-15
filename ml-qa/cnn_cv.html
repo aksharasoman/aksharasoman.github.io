@@ -306,8 +306,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#controls" id="toc-controls" class="nav-link active" data-scroll-target="#controls">Controls</a></li>
   <li><a href="#self-attention" id="toc-self-attention" class="nav-link" data-scroll-target="#self-attention">Self-Attention</a></li>
-  <li><a href="#multi-head-attention" id="toc-multi-head-attention" class="nav-link" data-scroll-target="#multi-head-attention">Multi-Head Attention</a></li>
-  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts">Scripts</a></li>
   </ul>
 </nav>
     </div>
@@ -351,40 +349,16 @@ Collapse All
 <strong>What is self-attention?</strong>
 </summary>
 <p>Self-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.</p>
-<p><strong>One-line answer:</strong><br>
+<p><strong>One-line:</strong><br>
 Self-attention lets each token dynamically focus on other tokens to model global context.</p>
-<strong>Common trap:</strong><br>
+<strong>Trap:</strong><br>
 Confusing self-attention with cross-attention.
 </details>
-<details class="qa">
-<summary>
-<strong>Why is scaling used in dot-product attention?</strong>
-</summary>
-<p>Scaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.</p>
-<strong>One-line answer:</strong><br>
-Scaling avoids softmax saturation and stabilizes training.
-</details>
 <hr>
-</section>
-<section id="multi-head-attention" class="level2">
-<h2 class="anchored" data-anchor-id="multi-head-attention">Multi-Head Attention</h2>
-<details class="qa">
-<summary>
-<strong>Why use multiple attention heads?</strong>
-</summary>
-<p>Multiple heads allow the model to attend to different representation subspaces and capture diverse relationships in parallel.</p>
-<strong>One-line answer:</strong><br>
-Multi-head attention learns different relationships simultaneously.
-</details>
-<hr>
-</section>
-<section id="scripts" class="level2">
-<h2 class="anchored" data-anchor-id="scripts">Scripts</h2>
 <script>
 function expandAll() {
   document.querySelectorAll("details.qa").forEach(d => d.open = true);
 }
-
 function collapseAll() {
   document.querySelectorAll("details.qa").forEach(d => d.open = false);
 }

@@ -25,21 +25,7 @@
     "href": "ml-qa/cnn_cv.html#self-attention",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "Self-Attention",
-    "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line answer:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nCommon trap:\nConfusing self-attention with cross-attention.\n\n\n\nWhy is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.\nOne-line answer:\nScaling avoids softmax saturation and stabilizes training."
-  },
-  {
-    "objectID": "ml-qa/cnn_cv.html#multi-head-attention",
-    "href": "ml-qa/cnn_cv.html#multi-head-attention",
-    "title": "Attention & Transformers — Interview Q&A",
-    "section": "Multi-Head Attention",
-    "text": "Multi-Head Attention\n\n\nWhy use multiple attention heads?\n\nMultiple heads allow the model to attend to different representation subspaces and capture diverse relationships in parallel.\nOne-line answer:\nMulti-head attention learns different relationships simultaneously."
-  },
-  {
-    "objectID": "ml-qa/cnn_cv.html#scripts",
-    "href": "ml-qa/cnn_cv.html#scripts",
-    "title": "Attention & Transformers — Interview Q&A",
-    "section": "Scripts",
-    "text": "Scripts"
+    "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention."
   },
   {
     "objectID": "about.html",

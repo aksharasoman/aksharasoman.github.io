@@ -10,7 +10,7 @@
 <atom:link href="https://www.aksharasoman.github.io/ml-qa.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Thu, 15 Jan 2026 16:37:37 GMT</lastBuildDate>
+<lastBuildDate>Thu, 15 Jan 2026 16:44:01 GMT</lastBuildDate>
 <item>
   <title>Attention &amp; Transformers — Interview Q&amp;A</title>
   <link>https://www.aksharasoman.github.io/ml-qa/attention.html</link>
@@ -58,7 +58,7 @@ Multi-head attention learns different relationships simultaneously.
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/attention.html</guid>
-  <pubDate>Thu, 15 Jan 2026 16:37:37 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
 </item>
 <item>
   <title>Attention &amp; Transformers — Interview Q&amp;A</title>
@@ -86,40 +86,16 @@ Collapse All
 <strong>What is self-attention?</strong>
 </summary>
 <p>Self-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.</p>
-<p><strong>One-line answer:</strong><br>
+<p><strong>One-line:</strong><br>
 Self-attention lets each token dynamically focus on other tokens to model global context.</p>
-<strong>Common trap:</strong><br>
+<strong>Trap:</strong><br>
 Confusing self-attention with cross-attention.
 </details>
-<details class="qa">
-<summary>
-<strong>Why is scaling used in dot-product attention?</strong>
-</summary>
-<p>Scaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.</p>
-<strong>One-line answer:</strong><br>
-Scaling avoids softmax saturation and stabilizes training.
-</details>
 <hr>
-</section>
-<section id="multi-head-attention" class="level2">
-<h2 class="anchored" data-anchor-id="multi-head-attention">Multi-Head Attention</h2>
-<details class="qa">
-<summary>
-<strong>Why use multiple attention heads?</strong>
-</summary>
-<p>Multiple heads allow the model to attend to different representation subspaces and capture diverse relationships in parallel.</p>
-<strong>One-line answer:</strong><br>
-Multi-head attention learns different relationships simultaneously.
-</details>
-<hr>
-</section>
-<section id="scripts" class="level2">
-<h2 class="anchored" data-anchor-id="scripts">Scripts</h2>
 <script>
 function expandAll() {
   document.querySelectorAll("details.qa").forEach(d => d.open = true);
 }
-
 function collapseAll() {
   document.querySelectorAll("details.qa").forEach(d => d.open = false);
 }
@@ -130,7 +106,7 @@ function collapseAll() {
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/cnn_cv.html</guid>
-  <pubDate>Thu, 15 Jan 2026 16:37:37 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
 </item>
 <item>
   <title>ML — Rolling Notes</title>
@@ -158,7 +134,7 @@ Click on a topic to access expandable Q&amp;A.</p>
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/ml-qa/</guid>
-  <pubDate>Thu, 15 Jan 2026 16:37:37 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 16:44:01 GMT</pubDate>
 </item>
 </channel>
 </rss>
