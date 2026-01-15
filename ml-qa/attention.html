@@ -76,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/ml-notes.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -356,7 +357,7 @@ Confusing self-attention with cross-attention.
 </details>
 <details class="qa">
 <summary>
-<strong>Why is scaling used in dot-product attention?</strong>
+Why is scaling used in dot-product attention?
 </summary>
 <p>Scaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.</p>
 <strong>One-line:</strong><br>
@@ -373,24 +374,22 @@ Scaling avoids softmax saturation and stabilizes training.
 <strong>One-line:</strong><br>
 Multi-head attention learns different relationships simultaneously.
 </details>
-<script>
-function expandAll() {
-  document.querySelectorAll("details.qa").forEach(d => d.open = true);
-}
-function collapseAll() {
-  document.querySelectorAll("details.qa").forEach(d => d.open = false);
-}
-</script>
-<style>
-details.qa {
-  margin-bottom: 1rem;
-}
-</style>
 
 
 </section>
 
 </main> <!-- /main -->
+function expandAll() {
+  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = true);
+}
+
+function collapseAll() {
+  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = false);
+}
+
+function toggleReview() {
+  document.body.classList.toggle("review-mode");
+}
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

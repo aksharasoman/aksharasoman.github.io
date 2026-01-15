@@ -76,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../assets/ml-notes.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -304,8 +305,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#controls" id="toc-controls" class="nav-link active" data-scroll-target="#controls">Controls</a></li>
-  <li><a href="#self-attention" id="toc-self-attention" class="nav-link" data-scroll-target="#self-attention">Self-Attention</a></li>
+  <li><a href="#self-attention" id="toc-self-attention" class="nav-link active" data-scroll-target="#self-attention">Self-Attention</a></li>
   </ul>
 </nav>
     </div>
@@ -332,15 +332,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="controls" class="level2">
-<h2 class="anchored" data-anchor-id="controls">Controls</h2>
 <button onclick="expandAll()">
 Expand All
 </button>
 <button onclick="collapseAll()">
 Collapse All
 </button>
-</section>
 <section id="self-attention" class="level2">
 <h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
 <details class="qa">
@@ -367,6 +364,17 @@ function collapseAll() {
 </section>
 
 </main> <!-- /main -->
+function expandAll() {
+  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = true);
+}
+
+function collapseAll() {
+  document.querySelectorAll("details.qa").forEach(d =&gt; d.open = false);
+}
+
+function toggleReview() {
+  document.body.classList.toggle("review-mode");
+}
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

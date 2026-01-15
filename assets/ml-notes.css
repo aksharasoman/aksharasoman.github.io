@@ -1,0 +1,20 @@
+/* Spacing between Q&A blocks */
+details.qa {
+  margin-bottom: 1rem;
+}
+
+/* Improve summary readability */
+details.qa summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Optional: subtle hover */
+details.qa summary:hover {
+  color: #2c7be5;
+}
+
+/* Buttons */
+button {
+  margin-right: 0.5rem;
+}
