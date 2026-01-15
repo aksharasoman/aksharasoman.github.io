@@ -11,35 +11,35 @@
     "href": "ml-notes/ml_basics.html",
     "title": "akshara soman",
     "section": "",
-    "text": "Expand All\n  Collapse All\n\n\n\n\n\n\n\n\n\n{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line answer:\n{{ONE_LINE}}\nCommon trap:\n{{TRAP}}"
+    "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line answer:\n{{ONE_LINE}}\nCommon trap:\n{{TRAP}}"
   },
   {
     "objectID": "ml-notes/index.html",
     "href": "ml-notes/index.html",
     "title": "ML — Rolling Notes",
     "section": "",
-    "text": "Expand All\n  Collapse All"
+    "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: January 15, 2026"
   },
   {
     "objectID": "ml-notes/index.html#topics",
     "href": "ml-notes/index.html#topics",
     "title": "ML — Rolling Notes",
-    "section": "📚 Topics",
-    "text": "📚 Topics\nEach topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: January 15, 2026"
+    "section": "",
+    "text": "Each topic contains click-to-expand questions, optimized for quick revision.\n\nAttention & Transformers\nOptimization & Training\nCNNs & Computer Vision\nML Basics\n\nLast updated: January 15, 2026"
   },
   {
     "objectID": "ml-notes/attention.html",
     "href": "ml-notes/attention.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
-    "text": "Expand All\n  Collapse All"
+    "text": "What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention.\n\n\n\nWhy is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.\nOne-line:\nScaling avoids softmax saturation and stabilizes training."
   },
   {
     "objectID": "ml-notes/attention.html#self-attention",
     "href": "ml-notes/attention.html#self-attention",
     "title": "Attention & Transformers — Interview Q&A",
-    "section": "Self-Attention",
-    "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention.\n\n\n\nWhy is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.\nOne-line:\nScaling avoids softmax saturation and stabilizes training."
+    "section": "",
+    "text": "What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention.\n\n\n\nWhy is scaling used in dot-product attention?\n\nScaling by √dₖ prevents large dot-product values from pushing the softmax into saturation, which stabilizes gradients.\nOne-line:\nScaling avoids softmax saturation and stabilizes training."
   },
   {
     "objectID": "ml-notes/attention.html#multi-head-attention",
@@ -102,21 +102,21 @@
     "href": "ml-notes/cnn_cv.html",
     "title": "Attention & Transformers — Interview Q&A",
     "section": "",
-    "text": "Expand All\n  Collapse All"
+    "text": "What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention."
   },
   {
     "objectID": "ml-notes/cnn_cv.html#self-attention",
     "href": "ml-notes/cnn_cv.html#self-attention",
     "title": "Attention & Transformers — Interview Q&A",
-    "section": "Self-Attention",
-    "text": "Self-Attention\n\n\nWhat is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention."
+    "section": "",
+    "text": "What is self-attention?\n\nSelf-attention allows each token in a sequence to weigh the relevance of all other tokens when computing its representation.\nOne-line:\nSelf-attention lets each token dynamically focus on other tokens to model global context.\nTrap:\nConfusing self-attention with cross-attention."
   },
   {
     "objectID": "ml-notes/optimization.html",
     "href": "ml-notes/optimization.html",
     "title": "akshara soman",
     "section": "",
-    "text": "Expand All\n  Collapse All\n\n\n\n\n\n\n\n\n\n{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line:\n{{ONE_LINE}}"
+    "text": "{{QUESTION}}\n\n{{CORE_ANSWER}}\nOne-line:\n{{ONE_LINE}}"
   },
   {
     "objectID": "publications.html",
