@@ -9,13 +9,14 @@
 <link>https://www.aksharasoman.github.io/</link>
 <atom:link href="https://www.aksharasoman.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A machine learning blog</description>
-<generator>quarto-1.5.56</generator>
+<generator>quarto-1.8.26</generator>
 <lastBuildDate>Tue, 12 Nov 2024 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Document-Based Question Answering Chatbot with Memory Using LangChain and LangGraph</title>
   <dc:creator>Akshara Soman</dc:creator>
   <link>https://www.aksharasoman.github.io/posts/003_qaDocs/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -109,6 +110,7 @@
 
 
 
+
 <p>A chatbot project can help solidify your understanding of a few key AI concepts– and is fun to build! While there are numerous short courses available that focus on developing and using chatbot interfaces, this list will offer a solid starting point.</p>
 <ol type="1">
 <li><a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">ChatGPT Prompt Engineering for Developers</a> : 1 hr
@@ -161,6 +163,7 @@
 
 
 
+
 <p>Building an effective chatbot involves understanding various key aspects, including the training of Large Language Models(LLMs), incorporating memory, and production considerations.</p>
 <section id="training" class="level4">
 <h4 class="anchored" data-anchor-id="training">Training</h4>
@@ -198,6 +201,7 @@
   <dc:creator>Akshara Soman</dc:creator>
   <link>https://www.aksharasoman.github.io/posts/002_chatbot/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -324,6 +328,7 @@
 
 
 
+
 <section id="leetcode-solutions" class="level1">
 <h1>Leetcode Solutions</h1>
 <p>This is a collection of solutions_(in progress)_ to common Leetcode questions, based on a list compiled by <a href="https://neetcode.io/practice">Neetcode</a>.</p>
@@ -366,6 +371,7 @@
 
 
 
+
 <section id="objective-of-the-project" class="level3">
 <h3 class="anchored" data-anchor-id="objective-of-the-project">Objective of the Project</h3>
 <p>Build a DC-GAN (Deep Convolutional Generative Adversarial Network) to generate images of handwritten digits.</p>
@@ -400,7 +406,7 @@ Figure&nbsp;1: Basic GAN architecture
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-GAN Training Strategy
+<span class="screen-reader-only">Note</span>GAN Training Strategy
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -422,12 +428,12 @@ GAN Training Strategy
 </ol>
 <p>For ease of understanding, you may refer to the <a href="https://github.com/aksharasoman/dcgan/blob/f245b0250f79fcba497506f58dd080faeceade71/GAN_handwrittenDigits.ipynb">iPython notebook</a>, where each task is coded in separate sections.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Expected learnings
+<span class="screen-reader-only">Tip</span>Expected learnings
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -457,9 +463,6 @@ Expected learnings
 </section>
 <section id="results-snapshot" class="level3">
 <h3 class="anchored" data-anchor-id="results-snapshot">Results Snapshot</h3>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -516,6 +519,7 @@ Expected learnings
 
 
 
+
 <section id="building-a-chatbot-using-gemini-api" class="level1">
 <h1>Building a Chatbot using Gemini API</h1>
 <section id="task-0-configure-api-key" class="level4">
@@ -527,7 +531,7 @@ Expected learnings
 <section id="task-1-initialize-the-model" class="level4">
 <h4 class="anchored" data-anchor-id="task-1-initialize-the-model">Task 1: Initialize the model</h4>
 <div id="cell-4" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> google.generativeai <span class="im" style="color: #00769E;
 background-color: null;
@@ -556,11 +560,11 @@ background-color: null;
 font-style: inherit;">file</span>.read()</span>
 <span id="cb1-5">genai.configure(api_key<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>API_KEY)</span></code></pre></div>
+font-style: inherit;">=</span>API_KEY)</span></code></pre></div></div>
 </div>
 <p>Use system instructions to steer the behavior of the model</p>
 <div id="cell-6" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Using a context manager to open the file</span></span>
 <span id="cb2-2"><span class="cf" style="color: #003B4F;
@@ -581,10 +585,10 @@ font-style: inherit;">file</span>:</span>
 background-color: null;
 font-style: inherit;">=</span> <span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">file</span>.read()</span></code></pre></div>
+font-style: inherit;">file</span>.read()</span></code></pre></div></div>
 </div>
 <div id="cell-7" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">model<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">model<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span>genai.GenerativeModel(</span>
 <span id="cb3-2">  model_name<span class="op" style="color: #5E5E5E;
@@ -603,7 +607,7 @@ font-style: inherit;">##### 2.1 Initialize the chat</span></span>
 background-color: null;
 font-style: inherit;">=</span> model.start_chat(history<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>[])</span></code></pre></div>
+font-style: inherit;">=</span>[])</span></code></pre></div></div>
 </div>
 </section>
 <section id="task-2-receive-prompts-and-save-context-and-generate-chat-responses" class="level4">
@@ -612,7 +616,7 @@ font-style: inherit;">=</span>[])</span></code></pre></div>
 <p>Example: <a href="https://ai.google.dev/gemini-api/docs/text-generation?lang=python#chat">Build an interactive chat</a></p>
 <p>The <strong>ChatSession.send_message</strong> method returns the same <em>GenerateContentResponse</em> type as <strong>GenerativeModel.generate_content</strong>. It also appends your message and the response to the chat history</p>
 <div id="cell-10" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> panel <span class="im" style="color: #00769E;
 background-color: null;
@@ -638,14 +642,14 @@ font-style: inherit;">"Pizza Bot"</span>, avatar<span class="op" style="color: #
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"🐼"</span>)</span></code></pre></div>
+font-style: inherit;">"🐼"</span>)</span></code></pre></div></div>
 </div>
 </section>
 <section id="task-3-build-gui" class="level4">
 <h4 class="anchored" data-anchor-id="task-3-build-gui">Task 3: Build GUI</h4>
 <p>Help: <a href="https://panel.holoviz.org/tutorials/basic/build_chatbot.html">doc</a></p>
 <div id="cell-13" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">pn.extension(<span class="st" style="color: #20794D;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">pn.extension(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"perspective"</span>)<span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -677,7 +681,7 @@ background-color: null;
 font-style: inherit;">=</span><span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">False</span>,</span>
-<span id="cb5-5">                                 )</span></code></pre></div>
+<span id="cb5-5">                                 )</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <script type="application/javascript">
 (function(root) {
@@ -1292,7 +1296,7 @@ if (window.Jupyter !== undefined) {
 <h4 class="anchored" data-anchor-id="task-4-serving-the-notebook">Task 4: Serving the Notebook</h4>
 <p>We’ll organize our components in a nicely styled template (MaterialTemplate) and mark it .servable() to add it to our served app</p>
 <div id="cell-17" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">pn.template.MaterialTemplate(</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">pn.template.MaterialTemplate(</span>
 <span id="cb6-2">    site<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
@@ -1310,7 +1314,7 @@ font-style: inherit;">=</span>[chat_bot],</span>
 background-color: null;
 font-style: inherit;">;</span> <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;"># The ; is needed in the notebook to not display the template. Its not needed in a script</span></span></code></pre></div>
+font-style: inherit;"># The ; is needed in the notebook to not display the template. Its not needed in a script</span></span></code></pre></div></div>
 </div>
 <p><strong>Deploy the app locally:</strong></p>
 <p>Run in terminal:</p>
@@ -1335,7 +1339,7 @@ font-style: inherit;"># The ; is needed in the notebook to not display the templ
 
  ]]></description>
   <guid>https://www.aksharasoman.github.io/posts/002_chatbot/v2_gemini-pizza-chatbot_chatInterface.html</guid>
-  <pubDate>Tue, 26 Nov 2024 16:52:53 GMT</pubDate>
+  <pubDate>Thu, 15 Jan 2026 12:01:40 GMT</pubDate>
   <media:content url="https://www.aksharasoman.github.io/posts/002_chatbot/chatbot.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>

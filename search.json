@@ -7,8 +7,8 @@
     "text": "I am an AI Developer Relations Engineer at Sieve, a Y Combinator-backed startup based in San Francisco. Sieve offers API tools for video AI, including a platform for deploying models, a Python library with ready-to-use AI models, and applications built for different use cases.\nI hold a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I conducted research at the LEAP lab under Prof. Sriram Ganapathy. Previously, I worked as a research engineer in Image Processing at Tata Research Development and Design Center (TRDDC), Pune.\nMy academic background includes an MTech in System Science and Automation (now ‘Artificial Intelligence’) from IISc and a BTech in Electronics and Communication from the College of Engineering, Trivandrum (CET)."
   },
   {
-    "objectID": "blog_index.html",
-    "href": "blog_index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Blog",
     "section": "",
     "text": "Jupyter Notebook - Building an Orderbot using Gemini API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDocument-Based Question Answering Chatbot with Memory Using LangChain and LangGraph\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\nLangChain\n\n\n\n\n\n\n\nAkshara Soman\n\n\nNov 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Chatbot Development with DeepLearning.AI Courses\n\n\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Aspects of Building a Chatbot\n\n\n\ntheory\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nChatbot for a Pizza Restaurant using free Gemini LLM API\n\n\n\nproject\n\ngen-ai\n\nchatbot\n\nLLM\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoding Practice - Solution to Leetcode Problems\n\n\n\ncoding\n\n\n\n\n\n\n\nAkshara Soman\n\n\nAug 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGenerate Handwritten Digits Using GAN\n\n\n\nproject\n\ngen-ai\n\nGAN\n\npytorch\n\n\n\n\n\n\n\nAkshara Soman\n\n\nJul 12, 2024\n\n\n\n\n\n\nNo matching items"
@@ -93,7 +93,7 @@
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications",
+    "title": "Publications CHECK",
     "section": "",
     "text": "A. Soman, Madhavan C. R., K. Sarkar, and S. Ganapathy, An EEG Study On The Brain Representations in Language Learning, IOP Journal on Biomedical Physics and Engineering Express, 5(2), 25041, (2019).\nK. Praveen, A. Gupta, A. Soman and S. Ganapathy, Second Language Transfer Learning in Humans and Machines Using Image Supervision, IEEE ASRU, Dec. 2019.\nV. Krishnamohan, A. Soman, A. Gupta and S. Ganapathy, Audiovisual Correspondence Learning in Humans And Machines, Interspeech 2020, Beijing, October 2020.\nA. Soman, P. Ramachandran, and S. Ganapathy, ERP Evidences of Rapid Semantic Learning In Foreign Language Word Comprehension, Frontiers in Neuroscience, 2022. \nA. Soman, V. Sinha, and S. Ganapathy, Enhancing the EEG Speech Match Mismatch Tasks With Word Boundaries. Proc. INTERSPEECH 2023."
   }
